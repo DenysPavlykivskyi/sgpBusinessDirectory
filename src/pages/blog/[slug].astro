@@ -2,147 +2,144 @@
 import Layout from '../../layouts/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 
-// In a real implementation, this would come from a CMS or file system
-const blogPosts = [
-  {
-    id: 1,
-    slug: 'understanding-business-registration',
-    title: 'Understanding Business Registration in Singapore',
-    excerpt: 'Learn about the different types of business registrations in Singapore and how to choose the right one for your venture.',
-    content: `
-      <p>Singapore is known for its business-friendly environment, making it an attractive destination for entrepreneurs and companies looking to establish a presence in Asia. Understanding the different types of business entities available is crucial for making the right choice for your specific needs.</p>
-      
-      <h2>Sole Proprietorship</h2>
-      <p>A sole proprietorship is the simplest form of business entity in Singapore. It's owned by one individual who has unlimited liability for all debts and obligations. This means your personal assets are not protected if your business faces financial difficulties.</p>
-      
-      <p>Advantages:</p>
-      <ul>
-        <li>Easy and inexpensive to set up</li>
-        <li>Minimal compliance requirements</li>
-        <li>No need for audited accounts</li>
-      </ul>
-      
-      <p>Disadvantages:</p>
-      <ul>
-        <li>Unlimited liability</li>
-        <li>Limited financing options</li>
-        <li>Ceases to exist upon the death of the owner</li>
-      </ul>
-      
-      <h2>Partnership</h2>
-      <p>A partnership involves two or more individuals who share ownership. Like sole proprietorships, partners have unlimited liability for business debts.</p>
-      
-      <p>Advantages:</p>
-      <ul>
-        <li>Easy to set up</li>
-        <li>Shared management responsibilities</li>
-        <li>Broader skill set and resources</li>
-      </ul>
-      
-      <p>Disadvantages:</p>
-      <ul>
-        <li>Unlimited liability for all partners</li>
-        <li>Partnership dissolves when a partner leaves</li>
-        <li>Partners are liable for actions of other partners</li>
-      </ul>
-      
-      <h2>Limited Partnership (LP)</h2>
-      <p>A limited partnership has at least one general partner with unlimited liability and one limited partner whose liability is limited to the amount of their agreed contribution.</p>
-      
-      <p>Advantages:</p>
-      <ul>
-        <li>Limited liability for limited partners</li>
-        <li>Flexibility in profit sharing</li>
-        <li>Less disclosure requirements than companies</li>
-      </ul>
-      
-      <p>Disadvantages:</p>
-      <ul>
-        <li>At least one partner must have unlimited liability</li>
-        <li>Limited partners cannot be involved in management</li>
-        <li>Can be complex to set up</li>
-      </ul>
-      
-      <h2>Private Limited Company</h2>
-      <p>A private limited company is a separate legal entity from its shareholders. Shareholders' liability is limited to their capital contribution.</p>
-      
-      <p>Advantages:</p>
-      <ul>
-        <li>Limited liability protection</li>
-        <li>Perpetual succession</li>
-        <li>Enhanced credibility and image</li>
-        <li>Tax benefits and incentives</li>
-        <li>Easier to raise capital</li>
-      </ul>
-      
-      <p>Disadvantages:</p>
-      <ul>
-        <li>Higher setup and maintenance costs</li>
-        <li>More statutory compliance requirements</li>
-        <li>Annual filing of accounts and returns</li>
-      </ul>
-      
-      <h2>Limited Liability Partnership (LLP)</h2>
-      <p>An LLP combines elements of a partnership and a company. Partners have limited liability while the partnership has the flexibility of operating as a traditional partnership.</p>
-      
-      <p>Advantages:</p>
-      <ul>
-        <li>Limited liability protection</li>
-        <li>Flexibility in management and profit sharing</li>
-        <li>Lower compliance requirements than companies</li>
-      </ul>
-      
-      <p>Disadvantages:</p>
-      <ul>
-        <li>May not be as prestigious as a company</li>
-        <li>Less understood by the public</li>
-        <li>Cannot issue shares to raise capital</li>
-      </ul>
-      
-      <h2>Making the Right Choice</h2>
-      <p>When deciding on the type of business entity to register in Singapore, consider the following factors:</p>
-      
-      <ul>
-        <li>Liability exposure and risk tolerance</li>
-        <li>Tax implications</li>
-        <li>Compliance requirements and costs</li>
-        <li>Funding needs</li>
-        <li>Long-term business goals</li>
-      </ul>
-      
-      <p>It's advisable to consult with a professional business consultant or legal advisor before making your decision. The right business structure will provide a solid foundation for your venture's growth and success in Singapore's dynamic market.</p>
-    `,
-    date: '2025-06-15',
-    author: 'Sarah Chen',
-    category: 'Business Tips',
-    image: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: 2,
-    slug: 'singapore-business-landscape-2025',
-    title: 'The Changing Landscape of Singapore Business in 2025',
-    excerpt: 'An in-depth analysis of how Singapore\'s business environment has evolved and what to expect in the coming years.',
-    content: `<p>Singapore's business landscape has undergone significant transformation in recent years. This article examines the current state and future trends.</p>`,
-    date: '2025-06-01',
-    author: 'Michael Tan',
-    category: 'Business Analysis',
-    image: 'https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: 3,
-    slug: 'tax-considerations-singapore-companies',
-    title: 'Tax Considerations for Singapore Companies',
-    excerpt: 'Essential tax information for businesses operating in Singapore, including incentives, rates, and compliance requirements.',
-    content: `<p>Singapore offers a competitive tax environment for businesses. This article explores key tax considerations for companies operating in Singapore.</p>`,
-    date: '2025-05-20',
-    author: 'David Wong',
-    category: 'Finance',
-    image: 'https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=800'
-  }
-];
-
 // Generate paths for all blog posts
 export async function getStaticPaths() {
+  const blogPosts = [
+    {
+      id: 1,
+      slug: 'understanding-business-registration',
+      title: 'Understanding Business Registration in Singapore',
+      excerpt: 'Learn about the different types of business registrations in Singapore and how to choose the right one for your venture.',
+      content: `
+        <p>Singapore is known for its business-friendly environment, making it an attractive destination for entrepreneurs and companies looking to establish a presence in Asia. Understanding the different types of business entities available is crucial for making the right choice for your specific needs.</p>
+        
+        <h2>Sole Proprietorship</h2>
+        <p>A sole proprietorship is the simplest form of business entity in Singapore. It's owned by one individual who has unlimited liability for all debts and obligations. This means your personal assets are not protected if your business faces financial difficulties.</p>
+        
+        <p>Advantages:</p>
+        <ul>
+          <li>Easy and inexpensive to set up</li>
+          <li>Minimal compliance requirements</li>
+          <li>No need for audited accounts</li>
+        </ul>
+        
+        <p>Disadvantages:</p>
+        <ul>
+          <li>Unlimited liability</li>
+          <li>Limited financing options</li>
+          <li>Ceases to exist upon the death of the owner</li>
+        </ul>
+        
+        <h2>Partnership</h2>
+        <p>A partnership involves two or more individuals who share ownership. Like sole proprietorships, partners have unlimited liability for business debts.</p>
+        
+        <p>Advantages:</p>
+        <ul>
+          <li>Easy to set up</li>
+          <li>Shared management responsibilities</li>
+          <li>Broader skill set and resources</li>
+        </ul>
+        
+        <p>Disadvantages:</p>
+        <ul>
+          <li>Unlimited liability for all partners</li>
+          <li>Partnership dissolves when a partner leaves</li>
+          <li>Partners are liable for actions of other partners</li>
+        </ul>
+        
+        <h2>Limited Partnership (LP)</h2>
+        <p>A limited partnership has at least one general partner with unlimited liability and one limited partner whose liability is limited to the amount of their agreed contribution.</p>
+        
+        <p>Advantages:</p>
+        <ul>
+          <li>Limited liability for limited partners</li>
+          <li>Flexibility in profit sharing</li>
+          <li>Less disclosure requirements than companies</li>
+        </ul>
+        
+        <p>Disadvantages:</p>
+        <ul>
+          <li>At least one partner must have unlimited liability</li>
+          <li>Limited partners cannot be involved in management</li>
+          <li>Can be complex to set up</li>
+        </ul>
+        
+        <h2>Private Limited Company</h2>
+        <p>A private limited company is a separate legal entity from its shareholders. Shareholders' liability is limited to their capital contribution.</p>
+        
+        <p>Advantages:</p>
+        <ul>
+          <li>Limited liability protection</li>
+          <li>Perpetual succession</li>
+          <li>Enhanced credibility and image</li>
+          <li>Tax benefits and incentives</li>
+          <li>Easier to raise capital</li>
+        </ul>
+        
+        <p>Disadvantages:</p>
+        <ul>
+          <li>Higher setup and maintenance costs</li>
+          <li>More statutory compliance requirements</li>
+          <li>Annual filing of accounts and returns</li>
+        </ul>
+        
+        <h2>Limited Liability Partnership (LLP)</h2>
+        <p>An LLP combines elements of a partnership and a company. Partners have limited liability while the partnership has the flexibility of operating as a traditional partnership.</p>
+        
+        <p>Advantages:</p>
+        <ul>
+          <li>Limited liability protection</li>
+          <li>Flexibility in management and profit sharing</li>
+          <li>Lower compliance requirements than companies</li>
+        </ul>
+        
+        <p>Disadvantages:</p>
+        <ul>
+          <li>May not be as prestigious as a company</li>
+          <li>Less understood by the public</li>
+          <li>Cannot issue shares to raise capital</li>
+        </ul>
+        
+        <h2>Making the Right Choice</h2>
+        <p>When deciding on the type of business entity to register in Singapore, consider the following factors:</p>
+        
+        <ul>
+          <li>Liability exposure and risk tolerance</li>
+          <li>Tax implications</li>
+          <li>Compliance requirements and costs</li>
+          <li>Funding needs</li>
+          <li>Long-term business goals</li>
+        </ul>
+        
+        <p>It's advisable to consult with a professional business consultant or legal advisor before making your decision. The right business structure will provide a solid foundation for your venture's growth and success in Singapore's dynamic market.</p>`,
+      date: '2025-06-15',
+      author: 'Sarah Chen',
+      category: 'Business Tips',
+      image: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800'
+    },
+    {
+      id: 2,
+      slug: 'singapore-business-landscape-2025',
+      title: 'The Changing Landscape of Singapore Business in 2025',
+      excerpt: 'An in-depth analysis of how Singapore\'s business environment has evolved and what to expect in the coming years.',
+      content: `<p>Singapore's business landscape has undergone significant transformation in recent years. This article examines the current state and future trends.</p>`,
+      date: '2025-06-01',
+      author: 'Michael Tan',
+      category: 'Business Analysis',
+      image: 'https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=800'
+    },
+    {
+      id: 3,
+      slug: 'tax-considerations-singapore-companies',
+      title: 'Tax Considerations for Singapore Companies',
+      excerpt: 'Essential tax information for businesses operating in Singapore, including incentives, rates, and compliance requirements.',
+      content: `<p>Singapore offers a competitive tax environment for businesses. This article explores key tax considerations for companies operating in Singapore.</p>`,
+      date: '2025-05-20',
+      author: 'David Wong',
+      category: 'Finance',
+      image: 'https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=800'
+    }
+  ];
   return blogPosts.map(post => ({
     params: { slug: post.slug },
     props: { post }
@@ -158,10 +155,48 @@ const formattedDate = new Date(post.date).toLocaleDateString('en-SG', {
   day: 'numeric'
 });
 
-// Related posts (excluding current post)
-const relatedPosts = blogPosts
-  .filter(p => p.id !== post.id)
-  .slice(0, 3);
+// For related posts, we need to re-define the posts array
+const relatedPosts = [
+  {
+    id: 1,
+    slug: 'understanding-business-registration',
+    title: 'Understanding Business Registration in Singapore',
+    excerpt: 'Learn about the different types of business registrations...',
+    date: '2025-06-15',
+    author: 'Sarah Chen',
+    category: 'Business Tips',
+    image: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800'
+  },
+  {
+    id: 2,
+    slug: 'singapore-business-landscape-2025',
+    title: 'The Changing Landscape of Singapore Business in 2025',
+    excerpt: 'An in-depth analysis of how Singapore\'s business environment...',
+    date: '2025-06-01',
+    author: 'Michael Tan',
+    category: 'Business Analysis',
+    image: 'https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=800'
+  },
+  {
+    id: 3,
+    slug: 'tax-considerations-singapore-companies',
+    title: 'Tax Considerations for Singapore Companies',
+    excerpt: 'Essential tax information for businesses operating...',
+    date: '2025-05-20',
+    author: 'David Wong',
+    category: 'Finance',
+    image: 'https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=800'
+  }
+].filter(p => p.id !== post.id).slice(0, 3);
+
+// Helper function for date formatting in related posts
+const formatDate = (dateString) => {
+  return new Date(dateString).toLocaleDateString('en-SG', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
+};
 ---
 
 <Layout
