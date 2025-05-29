@@ -1,0 +1,33 @@
+---
+// This component creates an ad slot that will be invisible until populated
+
+interface Props {
+  id: string;         // Unique ID for this ad slot
+  position: string;   // Position identifier (e.g., 'sidebar', 'header', 'footer')
+  className?: string; // Optional CSS class names
+}
+
+const { id, position, className = '' } = Astro.props;
+---
+
+<div 
+  id={id} 
+  class={`ad-container ${className}`}
+  data-ad-slot={position}
+  data-ad-format="auto"
+  style="min-height: 0; min-width: 0; display: block;"
+>
+  <!-- Ads will be injected here by JavaScript when they become available -->
+</div>
+
+<style>
+  .ad-container {
+    /* 
+    Initially invisible with no dimensions, 
+    will be populated and sized by the ad script when available
+    */
+    margin: 0 auto;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+</style>
