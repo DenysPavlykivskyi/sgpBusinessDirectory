@@ -65,6 +65,18 @@ const SimilarlyNamedCompanies = companies
   .filter(c => 
     c.id !== company.id && c.name.slice(0, 6) === company.name.slice(0, 6)
   ).slice(0, 3);
+
+// Find Same Address Registered companies (same address)
+const SameAddressCompanies = companies
+  .filter(c => 
+    c.id !== company.id && c.address === company.address
+  );
+
+const SameAddressLiveorActiveCompanies = SameAddressCompanies
+  .filter(c =>
+    c.status == 'Live'
+);
+
 ---
 
 <Layout 
@@ -163,7 +175,7 @@ const SimilarlyNamedCompanies = companies
             
             <div class="sm:grid-cols-2 gap-x-4 gap-y-6">
                 Registration No. / Unique Entity Number: {company.uen || 'Not available'} issued by <br/>
-                {company.name} (the "Company") is a Private Company Limited by Shares, incorporated on {company.registrationDate} in Singapore . The address of the Company's registered office is {company.street_name}, {company.level_no + company.unit_no}, <a href="#">SINGAPORE({company.postal_code})</a>. The Company current operating status is live and has been operating for years.This Company's principal activity is {company.primaryIndustry?.description} with other information service activities {company.secondaryIndustry?.description} as the secondary activity.
+                {company.name} (the "Company") is a Private Company Limited by Shares, incorporated on {company.registrationDate} in Singapore . The address of the Company's registered office is <a href="#" class="text-blue-500">{company.street_name}</a>, {company.level_no + company.unit_no}, <a href="#" class="text-blue-500">SINGAPORE({company.postal_code})</a>. The Company current operating status is live and has been operating for years.This Company's principal activity is {company.primaryIndustry?.description} with other information service activities {company.secondaryIndustry?.description} as the secondary activity.
             </div>
           </div>
 
@@ -191,7 +203,9 @@ const SimilarlyNamedCompanies = companies
 
               <div>
                 <dt class="text-sm font-medium text-gray-500">Operating Status</dt>
-                <dd class="mt-1 text-sm text-gray-900">{company.status + ' as on ' + formatDate(company.uenIssueDate)}</dd>
+                <dd class="mt-1 text-sm text-gray-900">
+                  {company.status} as on {formatDate(company.uenIssueDate)}
+                </dd>
               </div>
               
               <div class="sm:col-span-2">
@@ -233,13 +247,25 @@ const SimilarlyNamedCompanies = companies
                   href={`https://maps.google.com/?q=${encodeURIComponent(company.address)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                  class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium text-blue-500 hover:text-primary-700"
                   >
                   <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   View on Map
+                  </a>
+                  <a
+                  href='#'
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium text-blue-500 hover:text-primary-700"
+                  >
+                  <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  {SameAddressCompanies.length} other entities registered at this address<p class="text-gray-500">({SameAddressLiveorActiveCompanies.length} live or active entities)</p>
                   </a>
                 </div>     
               </div>
@@ -261,7 +287,7 @@ const SimilarlyNamedCompanies = companies
                   
                   <div>
                     <dt class="text-sm font-medium text-gray-500">Principal Activity</dt>
-                    <dd class="mt-1 text-sm text-gray-900"><a href="#">{company.primaryIndustry?.description !== 'Not available' ? company.primaryIndustry?.description : 'Not available'}</a></dd>
+                    <dd class="mt-1 text-sm text-blue-500"><a href="#">{company.primaryIndustry?.description !== 'Not available' ? company.primaryIndustry?.description : 'Not available'}</a></dd>
                   </div>
                 </dl>
               </div>
@@ -277,7 +303,7 @@ const SimilarlyNamedCompanies = companies
                     
                     <div>
                       <dt class="text-sm font-medium text-gray-500">Secondary Activity</dt>
-                      <dd class="mt-1 text-sm text-gray-900">{company.secondaryIndustry?.description !== 'Not available' ? company.secondaryIndustry?.description : 'Not available'}</dd>
+                      <dd class="mt-1 text-sm text-blue-500">{company.secondaryIndustry?.description !== 'Not available' ? company.secondaryIndustry?.description : 'Not available'}</dd>
                     </div>
                   </dl>
                 </div>

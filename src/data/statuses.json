@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Terminated",
+    "slug": "terminated"
+  },
+  {
+    "name": "Cancelled",
+    "slug": "cancelled"
+  },
+  {
+    "name": "Cancellation In Progress",
+    "slug": "cancellation-in-progress"
+  },
+  {
+    "name": "Live",
+    "slug": "live"
+  },
+  {
+    "name": "Ceased Registration",
+    "slug": "ceased-registration"
+  },
+  {
+    "name": "Dissolved - Members Voluntary Winding Up",
+    "slug": "dissolved-members-voluntary-winding-up"
+  },
+  {
+    "name": "Struck Off",
+    "slug": "struck-off"
+  },
+  {
+    "name": "Live Company",
+    "slug": "live-company"
+  },
+  {
+    "name": "Dissolved - Compulsory Winding Up (Insolvency)",
+    "slug": "dissolved-compulsory-winding-up-insolvency"
+  },
+  {
+    "name": "Dissolved - Creditors Voluntary Winding Up",
+    "slug": "dissolved-creditors-voluntary-winding-up"
+  },
+  {
+    "name": "Gazetted To Be Struck Off",
+    "slug": "gazetted-to-be-struck-off"
+  },
+  {
+    "name": "In Liquidation - Compulsory Winding Up (Insolvency)",
+    "slug": "in-liquidation-compulsory-winding-up-insolvency"
+  },
+  {
+    "name": "Converted To LLP",
+    "slug": "converted-to-llp"
+  },
+  {
+    "name": "Amalgamated",
+    "slug": "amalgamated"
+  },
+  {
+    "name": "In Liquidation - Members voluntary winding up",
+    "slug": "in-liquidation-members-voluntary-winding-up"
+  },
+  {
+    "name": "Live (Receiver or Receiver and Manager appointed)",
+    "slug": "live-receiver-or-receiver-and-manager-appointed"
+  },
+  {
+    "name": "Dissolved - Compulsory Winding Up",
+    "slug": "dissolved-compulsory-winding-up"
+  },
+  {
+    "name": "In Liquidation - Creditors voluntary winding up",
+    "slug": "in-liquidation-creditors-voluntary-winding-up"
+  },
+  {
+    "name": "Struck Off (Early Dissolution)",
+    "slug": "struck-off-early-dissolution"
+  },
+  {
+    "name": "In Liquidation - Compulsory Winding Up",
+    "slug": "in-liquidation-compulsory-winding-up"
+  },
+  {
+    "name": "Cancelled (Non-Renewal)",
+    "slug": "cancelled-non-renewal"
+  },
+  {
+    "name": "Registration expired and has not been renewed",
+    "slug": "registration-expired-and-has-not-been-renewed"
+  },
+  {
+    "name": "In Liquidation",
+    "slug": "in-liquidation"
+  },
+  {
+    "name": "Removed (Applied To Be Revoked)",
+    "slug": "removed-applied-to-be-revoked"
+  },
+  {
+    "name": "Dissolved",
+    "slug": "dissolved"
+  }
+]

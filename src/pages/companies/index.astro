@@ -14,14 +14,6 @@ const totalPages = Math.ceil(totalCompanies / pageSize);
 // Get companies for current page
 const paginatedCompanies = companies.slice(0, pageSize);
 
-// Alphabetical filtering
-const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-const firstLetterCounts = alphabet.map(letter => {
-  const count = companies.filter(company => 
-    company.name.toUpperCase().startsWith(letter)
-  ).length;
-  return { letter, count };
-});
 ---
 
 <Layout 
@@ -37,28 +29,6 @@ const firstLetterCounts = alphabet.map(letter => {
 
       <!-- Ad slot below the title -->
       <AdSlot id="directory-top-ad" position="directory-top" className="mt-6" />
-
-      <!-- Alphabet filter -->
-      <!-- <div class="mt-6">
-        <div class="flex flex-wrap justify-center gap-2 text-sm">
-          <a 
-            href="/companies/" 
-            class="inline-flex items-center justify-center h-8 w-8 rounded-full bg-primary-100 text-primary-800 font-medium hover:bg-primary-200"
-          >
-            All
-          </a>
-          {firstLetterCounts.map(({ letter, count }) => (
-            <a
-              href={`/companies/letter/${letter.toLowerCase()}/`}
-              class={`inline-flex items-center justify-center h-8 w-8 rounded-full ${count > 0 ? 'bg-gray-100 text-gray-800 hover:bg-gray-200' : 'bg-gray-50 text-gray-300 cursor-not-allowed'}`}
-              aria-disabled={count === 0}
-              tabindex={count === 0 ? -1 : undefined}
-            >
-              {letter}
-            </a>
-          ))}
-        </div>
-      </div> -->
 
       <!-- Filter and search form -->
       <div class="mt-6 bg-gray-50 p-4 rounded-lg">

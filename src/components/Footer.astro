@@ -1,70 +1,131 @@
 ---
 const currentYear = new Date().getFullYear();
-const footerLinks = [
-  {
-    title: 'Directory',
-    links: [
-      { name: 'Companies', href: '/companies/' },
-      { name: 'Registration Types', href: '/registration-types/' },
-      { name: 'Search', href: '/search/' },
-    ]
-  },
-  {
-    title: 'Content',
-    links: [
-      { name: 'Blog', href: '/blog/' },
-      { name: 'News', href: '/news/' },
-      { name: 'About', href: '/about/' },
-    ]
-  },
-  {
-    title: 'Legal',
-    links: [
-      { name: 'Privacy Policy', href: '/privacy-policy/' },
-      { name: 'Terms of Service', href: '/terms-of-service/' },
-      { name: 'Cookie Policy', href: '/cookie-policy/' },
-    ]
-  }
+
+const countryBusinessDirectory = [
+  { icon: 'https://flagicons.lipis.dev/flags/4x3/au.svg', name: 'Australia Business Directory', href: 'https://www.aus61business.com/' },
+  { icon: 'https://flagicons.lipis.dev/flags/4x3/ca.svg', name: 'Canada Business Directory', href: 'https://www.can1business.com/' },
+  { icon: 'https://flagicons.lipis.dev/flags/4x3/gb.svg', name: 'United Kingdom Business Directory', href: 'https://www.gbrbusiness.com/' },
+  { icon: 'https://flagicons.lipis.dev/flags/4x3/hk.svg', name: 'Hong Kong Business Directory', href: 'https://www.hkgbusiness.com/' },
+  { icon: 'https://flagicons.lipis.dev/flags/4x3/my.svg', name: 'Malaysia Business Directory', href: 'https://www.mysbusiness.com/' },
+  { icon: 'https://flagicons.lipis.dev/flags/4x3/no.svg', name: 'Norway Business Directory', href: 'https://www.nor47business.com/' },
+  { icon: 'https://flagicons.lipis.dev/flags/4x3/nz.svg', name: 'New Zealand Business Directory', href: 'https://www.nzlbusiness.com/' },
 ];
+
+const QuickLinks = [
+  { name: 'Home About SGP Business', href: '/' },
+  { name: 'Singapore Standard Industrial Classification', href: 'companies' },
+  { name: 'Browser Categories', href: '/categories' },
+  { name: 'Singapore Government', href: '/government' },
+  { name: 'Instagram(@sgpbusiness)', href: 'https://www.instagram.com/sgpbusiness/' },
+  { name: 'Our Privacy Policy', href: '/Privacy-Policy' },
+  { name: 'Contact US', href: '/contact' },
+];
+
 ---
 
-<footer class="bg-gray-800 text-white">
+<footer class="bg-gray-700 text-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
-        <h2 class="text-xl font-bold mb-4">SG Business</h2>
+        <h2 class="text-xl font-bold mb-4">About SGP Business</h2>
         <p class="text-gray-300 mb-4 text-sm">
-          Your comprehensive directory of businesses registered in Singapore.
+          <a href="#" class="hover:text-white">SGPBusiness.com</a> is the largest business platform for business and individuals. We aggregate data across the Internet and put them into a pretty presentation for you. Leave the hard work to us. Your Singapore business directories!
         </p>
         <!-- Ad container that won't be visible until ads are added -->
         <div id="footer-ad" class="ad-container" data-ad-slot="footer"></div>
       </div>
-      
-      {footerLinks.map((category) => (
-        <div>
-          <h3 class="text-lg font-bold mb-4">{category.title}</h3>
-          <ul class="space-y-2">
-            {category.links.map((link) => (
-              <li>
-                <a 
-                  href={link.href} 
-                  class="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Business Directories</h3>
+        <ul class="space-y-2 mb-4">
+          {countryBusinessDirectory.map((link) => (
+            <li>
+              <span class="flag-icon" style={`background-image: url(${link.icon})`}></span>
+              <a 
+                href={link.href} 
+                class="text-gray-300 hover:text-white transition-colors duration-200 text-sm ease-in-out"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <h4 class="text-md hover:text-gray-300 mb-4"><a href="#" class="text-gray-300 hover:text-white">Masked NRIC is Not Private</a></h4>
+        <h3 class="text-lg font-bold mb-4">Data Analytics</h3>
+        <ul class="space-y-2 mb-4">
+          <li><a href="#" class="text-gray-300 hover:text-white">Live Entities with Exact Match Name</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white">Top 20 Property Agency by Number of Salesperson</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white">Energy Market Company-Uniform Singapore Energy Price(USEP)</a></li>
+        </ul>
+        <h3 class="text-lg font-bold mb-4">List of</h3>
+        <ul class="space-y-2 mb-4">
+          <li><a href="#" class="text-gray-300 hover:text-white">Singapore SMS Registry - Participating SMS Aggregators</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white">COVID-19 Self-Test Kits Authorised for use in Singapore (Distributors)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Singapore Company Search</h3>
+        <div class="sm:flex mb-4">
+          <form action="/search" method="get" class="flex items-center">
+            <input
+              type="text"
+              name="q"
+              placeholder="Search companies..."
+              class="w-64 px-4 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+            />
+            <button
+              type="submit"
+              class="absolute right-0 top-0 h-full px-3 text-gray-400 hover:text-gray-500"
+            >
+              <span class="sr-only">Search</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+              </svg>
+            </button>
+          </form>
         </div>
-      ))}
+        <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2 mb-4">
+          {QuickLinks.map((link) => (
+            <li>
+              <a 
+                href={link.href} 
+                class="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+        <a href="mailto:hello@sgpbusiness.com" class="text-gray-300 hover:text-white">hello@sgpbusiness.com</a>
+      </div>
     </div>
-    
     <div class="mt-12 pt-8 border-t border-gray-700">
-      <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="flex flex-col justify-between">
+        <h3>Disclaimer</h3>
         <p class="text-gray-300 text-sm">
-          &copy; {currentYear} SG Business Directory. All rights reserved.
+          All information and any services provided from sgpbusiness.com, its subdomain or all other pages under this domain are on an "as-is" and "as-available" basis without warranties of any kind and are made available for your general information and use only. While we endeavour to keep the information provided up to date, and as accurately as possible, your use is entirely at your risk, for which SGPBusiness.com shall not be liable whatsoever. We make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics on the website for any purpose. Therefore, any reliance you place on such information is strictly at your own risk. Our data may sometimes be cached or crawled and republished by other not affiliated or related sites, and we cannot be responsible for their content.
+          Please contact us, should you discover any outdated information, discrepancy or error. A correction will be made. Please note that all information published on our platform are readily available to the public on the Internet and are published in accordance with privacy laws.
+          <br/>
+          Information for App Store Apps is aggregated based on the "Seller" have an exact name match with the company name as listed on this page. App Store is a service mark of Apple Inc., registered in the U.S. and other countries.
+          <br/>
+          Information (less other data with last aggregated date) on this page was last updated on 8 January 2022, 00:17:01 GMT+8.
         </p>
-        <div class="flex space-x-4 mt-4 md:mt-0">
+        <p class="text-gray-300 text-sm">
+          &copy; {currentYear} SGP Business Directory. All rights reserved.
+        </p>
+        <!-- <div class="flex space-x-4 mt-4 md:mt-0">
           <a href="#" class="text-gray-300 hover:text-white">
             <span class="sr-only">Facebook</span>
             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -83,8 +144,21 @@ const footerLinks = [
               <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path>
             </svg>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
 </footer>
+
+<style>
+    .flag-icon {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    vertical-align: text-bottom;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>
