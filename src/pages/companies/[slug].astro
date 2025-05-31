@@ -3,6 +3,12 @@ import Layout from '../../layouts/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import companies from '../../data/companies.json';
 import activities from '../../data/activities.json';
+import ssicRecords from '../../data/clean_ssic_records.json';
+
+const ssicLookup = {};
+ssicRecords.forEach(record => {
+  ssicLookup[record.code] = record.industry;
+});
 
 // Generate static paths for all companies
 export async function getStaticPaths() {
@@ -296,7 +302,12 @@ const initials = getInitials(company.name);
                   <div>
                     <dt class="text-sm font-medium text-gray-500">Principal Activity</dt>
                     <dd class="mt-1 text-sm text-blue-500">
-                      <a href="#">{activities[company.primaryIndustry?.code] || company.primaryIndustry?.description || 'Not available'}</a>
+                      <a href="#">
+                        {company.primaryIndustry?.code 
+                          ? (ssicLookup[company.primaryIndustry.code] || company.primaryIndustry?.description || 'Not available') 
+                          : 'Not available'
+                        }
+                      </a>
                     </dd>
                   </div>
                 </dl>
@@ -314,8 +325,16 @@ const initials = getInitials(company.name);
                     <div>
                       <dt class="text-sm font-medium text-gray-500">Secondary Activity</dt>
                       <dd class="mt-1 text-sm text-blue-500">
-                        {activities[company.secondaryIndustry?.code] || company.secondaryIndustry?.description || 'Not available'}
-                      </dd>
+                      {
+                        (() => {
+                          if (!company.secondaryIndustry?.code) return 'Not available';
+                          const matchingRecord = ssicRecords.find(
+                            (record) => record.code === company.secondaryIndustry?.code
+                          );
+                          return matchingRecord?.industry || company.secondaryIndustry?.description || 'Not available';
+                        })()
+                      }
+                    </dd>
                     </div>
                   </dl>
                 </div>
