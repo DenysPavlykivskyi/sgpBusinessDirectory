@@ -5,11 +5,33 @@ import Pagination from '../../components/Pagination.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import companies from '../../data/companies.json';
 
+// Generate static paths for all pages
+export async function getStaticPaths() {
+  const pageSize = 12;
+  const totalPages = Math.ceil(companies.length / pageSize);
+  
+  return Array.from({ length: totalPages }, (_, i) => ({
+    params: { 
+      page: i === 0 ? undefined : (i + 1).toString() 
+    },
+    props: {
+      currentPage: i + 1
+    }
+  }));
+}
+
 // Pagination settings
 const pageSize = 12;
-const currentPage = parseInt(Astro.params.page) || 1;
 const totalCompanies = companies.length;
 const totalPages = Math.ceil(totalCompanies / pageSize);
+
+// Get current page from params (default to 1)
+const currentPage = Astro.props.currentPage || 1;
+
+// Validate page number
+if (currentPage < 1 || currentPage > totalPages) {
+  throw new Error(`Page ${currentPage} does not exist`);
+}
 
 // Calculate start and end index for current page
 const startIndex = (currentPage - 1) * pageSize;
@@ -20,18 +42,18 @@ const paginatedCompanies = companies.slice(startIndex, endIndex);
 
 // Base path for pagination links
 const basePath = '/companies/';
-
 ---
 
 <Layout 
-  title="Singapore Companies Directory - Browse All Companies"
-  description="Browse through our comprehensive directory of businesses registered in Singapore. Filter by company name, type, and status."
+  title={`Singapore Companies Directory - Page ${currentPage}`}
+  description={`Browse through our comprehensive list of businesses registered in Singapore - Page ${currentPage} of ${totalPages}`}
 >
   <section class="bg-white border-b">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <h1 class="text-3xl font-bold text-gray-900">Companies Directory</h1>
       <p class="mt-2 text-lg text-gray-600">
         Browse through our comprehensive list of businesses registered in Singapore
+        {currentPage > 1 && <span> - Page {currentPage}</span>}
       </p>
 
       <!-- Ad slot below the title -->
@@ -103,8 +125,21 @@ const basePath = '/companies/';
         ))}
       </div>
       
+      <!-- Show message when no companies found -->
+      {paginatedCompanies.length === 0 && (
+        <div class="text-center py-12">
+          <p class="text-lg text-gray-500">No companies found on this page</p>
+        </div>
+      )}
+
       <!-- Pagination -->
-      <Pagination currentPage={currentPage} totalPages={totalPages} basePath={basePath} />
+      {totalPages > 1 && (
+        <Pagination 
+          currentPage={currentPage} 
+          totalPages={totalPages} 
+          basePath={basePath} 
+        />
+      )}
 
       <!-- Ad slot below pagination -->
       <AdSlot id="directory-bottom-ad" position="directory-bottom" className="mt-8" />

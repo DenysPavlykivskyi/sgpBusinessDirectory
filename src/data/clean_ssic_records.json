@@ -1,0 +1,4094 @@
+[
+  {
+    "code": "01411",
+    "industry": "Pig farms"
+  },
+  {
+    "code": "01412",
+    "industry": "Cattle farms (including dairy cattle)"
+  },
+  {
+    "code": "01413",
+    "industry": "Goat farms (including goat's milk production)"
+  },
+  {
+    "code": "01421",
+    "industry": "Poultry breeding/hatcheries"
+  },
+  {
+    "code": "01422",
+    "industry": "Broiler farms (chickens reared for meat)"
+  },
+  {
+    "code": "01423",
+    "industry": "Layer farms (chickens reared for eggs)"
+  },
+  {
+    "code": "01424",
+    "industry": "Duck farms"
+  },
+  {
+    "code": "01491",
+    "industry": "Dog breeding"
+  },
+  {
+    "code": "01492",
+    "industry": "Bird breeding"
+  },
+  {
+    "code": "01493",
+    "industry": "Crocodile farms"
+  },
+  {
+    "code": "01494",
+    "industry": "Frog farms"
+  },
+  {
+    "code": "01499",
+    "industry": "Other animal production n.e.c."
+  },
+  {
+    "code": "01500",
+    "industry": "Growing of crops combined with animal production (mixed farming)"
+  },
+  {
+    "code": "02000",
+    "industry": "Forestry, logging and related service activities"
+  },
+  {
+    "code": "03101",
+    "industry": "Fishing in kelongs"
+  },
+  {
+    "code": "03102",
+    "industry": "Ocean fishing except fishing in kelongs"
+  },
+  {
+    "code": "03103",
+    "industry": "Coastal fishing except fishing in kelongs"
+  },
+  {
+    "code": "03109",
+    "industry": "Fishing n.e.c."
+  },
+  {
+    "code": "03201",
+    "industry": "Food fish farms"
+  },
+  {
+    "code": "03202",
+    "industry": "Ornamental fish farms"
+  },
+  {
+    "code": "08101",
+    "industry": "Stone quarrying"
+  },
+  {
+    "code": "08102",
+    "industry": "Quarrying of sand and clay"
+  },
+  {
+    "code": "08900",
+    "industry": "Other mining and quarrying"
+  },
+  {
+    "code": "09001",
+    "industry": "Crude petroleum and natural gas production"
+  },
+  {
+    "code": "10109",
+    "industry": "Processing and preserving of meat and meat products n.e.c."
+  },
+  {
+    "code": "10301",
+    "industry": "Manufacture of jams (including fruit jelly)"
+  },
+  {
+    "code": "10302",
+    "industry": "Other canning and preserving of fruits and fruit juices"
+  },
+  {
+    "code": "10303",
+    "industry": "Other canning and preserving of vegetables and vegetable juices"
+  },
+  {
+    "code": "10409",
+    "industry": "Manufacture of vegetable and animal oils and fats n.e.c."
+  },
+  {
+    "code": "10502",
+    "industry": "Manufacture of milk powder"
+  },
+  {
+    "code": "10503",
+    "industry": "Manufacture of ice-cream"
+  },
+  {
+    "code": "10611",
+    "industry": "Rice milling"
+  },
+  {
+    "code": "10612",
+    "industry": "Wheat milling"
+  },
+  {
+    "code": "10620",
+    "industry": "Manufacture of starches and starch products"
+  },
+  {
+    "code": "10711",
+    "industry": "Manufacture of biscuits (including wafers and cones)"
+  },
+  {
+    "code": "10719",
+    "industry": "Manufacture of bakery products n.e.c."
+  },
+  {
+    "code": "10720",
+    "industry": "Manufacture of sugar and sugar products"
+  },
+  {
+    "code": "10731",
+    "industry": "Manufacture of cocoa and chocolate powder from beans"
+  },
+  {
+    "code": "10732",
+    "industry": "Manufacture of chocolate and chocolate products"
+  },
+  {
+    "code": "10740",
+    "industry": "Manufacture of macaroni, noodles, vermicelli and other related products"
+  },
+  {
+    "code": "12001",
+    "industry": "Manufacture of cigarettes"
+  },
+  {
+    "code": "13100",
+    "industry": "Spinning, weaving and finishing of textiles"
+  },
+  {
+    "code": "13910",
+    "industry": "Manufacture of knitted and crocheted fabrics and laces"
+  },
+  {
+    "code": "13921",
+    "industry": "Manufacture of curtains, pillow cases, bed sheets and bed spreads"
+  },
+  {
+    "code": "13922",
+    "industry": "Manufacture of other made-up house furnishings (e.g. napkins, table cloths)"
+  },
+  {
+    "code": "13930",
+    "industry": "Manufacture of carpets and rugs"
+  },
+  {
+    "code": "13940",
+    "industry": "Manufacture of cordage, rope, twine and netting"
+  },
+  {
+    "code": "13990",
+    "industry": "Manufacture of other textiles n.e.c. (e.g. upholstery filling)"
+  },
+  {
+    "code": "14101",
+    "industry": "Manufacture of outer garments"
+  },
+  {
+    "code": "14102",
+    "industry": "Manufacture of brassieres and other undergarments"
+  },
+  {
+    "code": "10101",
+    "industry": "Slaughtering of livestock and poultry"
+  },
+  {
+    "code": "10102",
+    "industry": "Manufacture of sausage"
+  },
+  {
+    "code": "10103",
+    "industry": "Preparing, canning and preserving of livestock and livestock products (including lard and other edible animal fats)"
+  },
+  {
+    "code": "10104",
+    "industry": "Preparing, canning and preserving of poultry and poultry products"
+  },
+  {
+    "code": "10401",
+    "industry": "Manufacture of edible vegetable and animal oils and fats"
+  },
+  {
+    "code": "10402",
+    "industry": "Manufacture of inedible vegetable and animal oils and fats"
+  },
+  {
+    "code": "10613",
+    "industry": "Provision of milling services"
+  },
+  {
+    "code": "12009",
+    "industry": "Manufacture of tobacco products n.e.c. (e.g. cigars, loose tobacco)"
+  },
+  {
+    "code": "14103",
+    "industry": "Tailoring and dressmaking (to individual order)"
+  },
+  {
+    "code": "14200",
+    "industry": "Manufacture of fur apparel and articles of fur (e.g. fur rugs, mats and cushions)"
+  },
+  {
+    "code": "14301",
+    "industry": "Manufacture of socks, stockings and other hosiery"
+  },
+  {
+    "code": "14302",
+    "industry": "Manufacture of briefs, singlets and other knitted or crocheted wear"
+  },
+  {
+    "code": "14309",
+    "industry": "Manufacture of knitted and crocheted apparel n.e.c."
+  },
+  {
+    "code": "15110",
+    "industry": "Tanning and dressing of leather; dressing and dyeing of fur"
+  },
+  {
+    "code": "15121",
+    "industry": "Manufacture of luggage, bags, brief cases and the like"
+  },
+  {
+    "code": "15122",
+    "industry": "Manufacture of handbags"
+  },
+  {
+    "code": "15200",
+    "industry": "Manufacture of footwear"
+  },
+  {
+    "code": "16101",
+    "industry": "Sawmilling"
+  },
+  {
+    "code": "16102",
+    "industry": "Preservation of wood"
+  },
+  {
+    "code": "16109",
+    "industry": "Sawmilling and planing of wood n.e.c."
+  },
+  {
+    "code": "16219",
+    "industry": "Manufacture of laminboard, particle board and other panels and boards n.e.c."
+  },
+  {
+    "code": "16292",
+    "industry": "Manufacture of household and kitchen wooden ware except wooden"
+  },
+  {
+    "code": "16299",
+    "industry": "Manufacture of other products of wood and articles of cork, straw and"
+  },
+  {
+    "code": "17010",
+    "industry": "Manufacture of pulp, paper and paperboard"
+  },
+  {
+    "code": "17021",
+    "industry": "Manufacture of corrugated paper and paperboard"
+  },
+  {
+    "code": "17022",
+    "industry": "Manufacture of containers and boxes of paper and paperboard"
+  },
+  {
+    "code": "17091",
+    "industry": "Manufacture of joss paper and other related ceremonial paper products"
+  },
+  {
+    "code": "17092",
+    "industry": "Manufacture of sanitary towels, toilet paper, paper towels, disposable"
+  },
+  {
+    "code": "17093",
+    "industry": "Manufacture of paper cups, plates and utensils"
+  },
+  {
+    "code": "17094",
+    "industry": "Manufacture of cards, envelopes and stationery, unprinted"
+  },
+  {
+    "code": "18111",
+    "industry": "Printing of newspapers"
+  },
+  {
+    "code": "18112",
+    "industry": "Printing of periodicals, books and magazines"
+  },
+  {
+    "code": "19202",
+    "industry": "Manufacture of petroleum lubricating oil"
+  },
+  {
+    "code": "19209",
+    "industry": "Manufacture of refined petroleum products n.e.c."
+  },
+  {
+    "code": "20111",
+    "industry": "Manufacture of industrial gases and dry ice"
+  },
+  {
+    "code": "20112",
+    "industry": "Manufacture of basic industrial acids and alkalis"
+  },
+  {
+    "code": "20113",
+    "industry": "Manufacture of basic chemicals except fertilisers and nitrogen"
+  },
+  {
+    "code": "20114",
+    "industry": "Manufacture of solvents"
+  },
+  {
+    "code": "20119",
+    "industry": "Manufacture of basic chemicals n.e.c."
+  },
+  {
+    "code": "20120",
+    "industry": "Manufacture of fertilisers and nitrogen compounds"
+  },
+  {
+    "code": "20132",
+    "industry": "Manufacture of derivatives and intermediates produced from basic building"
+  },
+  {
+    "code": "20133",
+    "industry": "Manufacture of synthetic rubber"
+  },
+  {
+    "code": "20210",
+    "industry": "Manufacture of pesticides and other agro-chemical products"
+  },
+  {
+    "code": "20221",
+    "industry": "Manufacture of paints"
+  },
+  {
+    "code": "20222",
+    "industry": "Manufacture of varnishes and lacquers (including enamels)"
+  },
+  {
+    "code": "20229",
+    "industry": "Manufacture of paints, varnishes and similar coatings and mastics n.e.c."
+  },
+  {
+    "code": "20231",
+    "industry": "Manufacture of soap, detergents, washing and other cleaning preparations"
+  },
+  {
+    "code": "20232",
+    "industry": "Manufacture of perfumes and fragrances"
+  },
+  {
+    "code": "20233",
+    "industry": "Manufacture of cosmetics and toiletries"
+  },
+  {
+    "code": "20234",
+    "industry": "Manufacture of waxes and polishes and deodorising preparations"
+  },
+  {
+    "code": "20242",
+    "industry": "Manufacture of additives for mineral oil (e.g. lubricant and fuel additives)"
+  },
+  {
+    "code": "20249",
+    "industry": "Manufacture of additives n.e.c."
+  },
+  {
+    "code": "20291",
+    "industry": "Manufacture of epoxy moulding compounds and phenolic moulding"
+  },
+  {
+    "code": "20292",
+    "industry": "Manufacture of ultrapure electronic chemicals, materials and laminates"
+  },
+  {
+    "code": "20293",
+    "industry": "Manufacture of water treatment, waste treatment and oilfield chemicals"
+  },
+  {
+    "code": "20294",
+    "industry": "Manufacture of inks, dyestuffs, pigments and carbon black"
+  },
+  {
+    "code": "20295",
+    "industry": "Manufacture of photographic film, paper, plate and chemicals"
+  },
+  {
+    "code": "20296",
+    "industry": "Manufacture of adhesives and sealants"
+  },
+  {
+    "code": "20297",
+    "industry": "Manufacture of catalysts and catalyst regeneration"
+  },
+  {
+    "code": "20298",
+    "industry": "Manufacture of biofuels"
+  },
+  {
+    "code": "20300",
+    "industry": "Manufacture of man-made fibres except glass"
+  },
+  {
+    "code": "21011",
+    "industry": "Manufacture of pharmaceutical intermediates and fine chemicals for"
+  },
+  {
+    "code": "21012",
+    "industry": "Manufacture of pharmaceutical products and preparations for human use"
+  },
+  {
+    "code": "16211",
+    "industry": "Manufacture of plywood and veneer"
+  },
+  {
+    "code": "16291",
+    "industry": "Manufacture of wooden window, door and other millwork, except prefabricated wooden building structures"
+  },
+  {
+    "code": "21021",
+    "industry": "Manufacture of vaccines for human use"
+  },
+  {
+    "code": "21022",
+    "industry": "Manufacture of other biological products and preparations for human use"
+  },
+  {
+    "code": "21023",
+    "industry": "Manufacture of biological products and preparations for veterinary use"
+  },
+  {
+    "code": "21030",
+    "industry": "Manufacture of traditional chinese medicine"
+  },
+  {
+    "code": "22111",
+    "industry": "Processing of rubber (including processing of rubber latex)"
+  },
+  {
+    "code": "22112",
+    "industry": "Grading and packing of rubber"
+  },
+  {
+    "code": "22119",
+    "industry": "Processing of natural gums n.e.c. (e.g. gum damar, jelutong)"
+  },
+  {
+    "code": "22121",
+    "industry": "Manufacture of tyres and tubes"
+  },
+  {
+    "code": "22122",
+    "industry": "Retreading and vulcanising of tyres"
+  },
+  {
+    "code": "22191",
+    "industry": "Manufacture of foam rubber products (excluding foam rubber mattresses)"
+  },
+  {
+    "code": "22192",
+    "industry": "Manufacture of rubber automotive parts"
+  },
+  {
+    "code": "22193",
+    "industry": "Manufacture of industrial and mechanical rubber goods"
+  },
+  {
+    "code": "22194",
+    "industry": "Manufacture of rubber floorings"
+  },
+  {
+    "code": "22199",
+    "industry": "Manufacture of other rubber products n.e.c. (except rubber footwear and toys)"
+  },
+  {
+    "code": "22212",
+    "industry": "Manufacture of styrofoam and plastic disposable utensils"
+  },
+  {
+    "code": "22215",
+    "industry": "Manufacture of plastic pipes and tubes"
+  },
+  {
+    "code": "22216",
+    "industry": "Manufacture of plastic precision engineering parts"
+  },
+  {
+    "code": "18200",
+    "industry": "Reproduction of recorded media"
+  },
+  {
+    "code": "24109",
+    "industry": "Manufacture of basic iron and steel n.e.c. (including smelting)"
+  },
+  {
+    "code": "24201",
+    "industry": "Tin smelting"
+  },
+  {
+    "code": "24202",
+    "industry": "Manufacture of non-ferrous metal alloys"
+  },
+  {
+    "code": "24209",
+    "industry": "Manufacture of basic precious and non-ferrous metals n.e.c."
+  },
+  {
+    "code": "24310",
+    "industry": "Iron and steel foundries"
+  },
+  {
+    "code": "24320",
+    "industry": "Non-ferrous metal foundries"
+  },
+  {
+    "code": "25111",
+    "industry": "Manufacture of metal doors, window and door frames, grilles and gratings"
+  },
+  {
+    "code": "25112",
+    "industry": "Manufacture of metal strips and slabs (e.g. awnings)"
+  },
+  {
+    "code": "25114",
+    "industry": "Manufacture of steel structural component"
+  },
+  {
+    "code": "25120",
+    "industry": "Manufacture and repair of tanks, reservoirs and containers of metal"
+  },
+  {
+    "code": "25131",
+    "industry": "Manufacture and repair of heating boilers, radiators and correctors"
+  },
+  {
+    "code": "25911",
+    "industry": "Iron and steel and non-ferrous forgings"
+  },
+  {
+    "code": "25912",
+    "industry": "Manufacture of metal caps (e.g. crown corks)"
+  },
+  {
+    "code": "25913",
+    "industry": "Manufacture of leadframe"
+  },
+  {
+    "code": "25914",
+    "industry": "Metal stampings except metal caps"
+  },
+  {
+    "code": "25919",
+    "industry": "Pressing and roll-forming of metal and powder metallurgy n.e.c."
+  },
+  {
+    "code": "25921",
+    "industry": "Electroplating and plating of metals and formed products"
+  },
+  {
+    "code": "25922",
+    "industry": "Polishing of metals and formed products"
+  },
+  {
+    "code": "25923",
+    "industry": "Rustproofing of metals and formed products"
+  },
+  {
+    "code": "25924",
+    "industry": "Heat treatment for metals"
+  },
+  {
+    "code": "25929",
+    "industry": "Metal product services n.e.c."
+  },
+  {
+    "code": "25931",
+    "industry": "Manufacture of table, kitchen and other cutlery"
+  },
+  {
+    "code": "25932",
+    "industry": "Manufacture of hand and edge tools"
+  },
+  {
+    "code": "25939",
+    "industry": "Manufacture of general hardware (including blacksmith shops) n.e.c."
+  },
+  {
+    "code": "25949",
+    "industry": "Manufacture of metal wire and cable products n.e.c."
+  },
+  {
+    "code": "25951",
+    "industry": "Manufacture of tinplate cans"
+  },
+  {
+    "code": "25952",
+    "industry": "Manufacture of other tinplate and zinc articles (e.g. pails, buckets, dustbins)"
+  },
+  {
+    "code": "25959",
+    "industry": "Manufacture of metal cans, containers and related products n.e.c."
+  },
+  {
+    "code": "25991",
+    "industry": "Manufacture of sanitary ware of enamelled iron and metal and plumbers"
+  },
+  {
+    "code": "25992",
+    "industry": "Manufacture of plumbing, heating and related products (including parts)"
+  },
+  {
+    "code": "25993",
+    "industry": "Manufacture of bolts, nuts, rivets, fasteners and screw machine products"
+  },
+  {
+    "code": "25994",
+    "industry": "Manufacture of pipe fittings"
+  },
+  {
+    "code": "25995",
+    "industry": "Manufacture of springs"
+  },
+  {
+    "code": "25997",
+    "industry": "Manufacture of metal precision components"
+  },
+  {
+    "code": "25998",
+    "industry": "Slitting, shearing and pasting of metal sheeting"
+  },
+  {
+    "code": "26112",
+    "industry": "Semiconductor wafer fabrication"
+  },
+  {
+    "code": "26129",
+    "industry": "Manufacture of other electronic components and boards n.e.c."
+  },
+  {
+    "code": "26201",
+    "industry": "Manufacture of computers and data processing equipment except"
+  },
+  {
+    "code": "26203",
+    "industry": "Manufacture of printers"
+  },
+  {
+    "code": "26204",
+    "industry": "Manufacture of smart cards and related products (e.g. smart card readers)"
+  },
+  {
+    "code": "26209",
+    "industry": "Manufacture of computers and peripheral equipment n.e.c."
+  },
+  {
+    "code": "26302",
+    "industry": "Manufacture of networking products (e.g. routers, switches)"
+  },
+  {
+    "code": "26303",
+    "industry": "Manufacture of wireless communications equipment (e.g. cellular phones)"
+  },
+  {
+    "code": "26309",
+    "industry": "Manufacture of communications equipment n.e.c."
+  },
+  {
+    "code": "25113",
+    "industry": "Manufacture of metal pipes and tubes"
+  },
+  {
+    "code": "26400",
+    "industry": "Manufacture of consumer electronics"
+  },
+  {
+    "code": "26511",
+    "industry": "Manufacture and repair of engineering and scientific instruments"
+  },
+  {
+    "code": "26512",
+    "industry": "Manufacture and repair of measuring devices (e.g. meters)"
+  },
+  {
+    "code": "26513",
+    "industry": "Manufacture and repair of process control equipment and related products"
+  },
+  {
+    "code": "26521",
+    "industry": "Manufacture of fully electronic watches and clocks"
+  },
+  {
+    "code": "26523",
+    "industry": "Manufacture of mechanical watches and clocks"
+  },
+  {
+    "code": "26524",
+    "industry": "Manufacture of parts and accessories for watches and clocks"
+  },
+  {
+    "code": "26601",
+    "industry": "Manufacture and repair of electrotherapeutic devices"
+  },
+  {
+    "code": "26602",
+    "industry": "Manufacture and repair of irradiation and electromedical equipment and"
+  },
+  {
+    "code": "26701",
+    "industry": "Manufacture of photographic equipment and parts (including lenses)"
+  },
+  {
+    "code": "26709",
+    "industry": "Manufacture of optical instruments and photographic equipment n.e.c."
+  },
+  {
+    "code": "26801",
+    "industry": "Manufacture of disk media"
+  },
+  {
+    "code": "26802",
+    "industry": "Manufacture of blank magnetic tapes, diskettes, Blu-ray technology discs,"
+  },
+  {
+    "code": "27101",
+    "industry": "Manufacture and repair of electric motors"
+  },
+  {
+    "code": "27102",
+    "industry": "Manufacture and repair of electric generators"
+  },
+  {
+    "code": "27103",
+    "industry": "Manufacture and repair of transformers"
+  },
+  {
+    "code": "27104",
+    "industry": "Manufacture and repair of switchgear and switchboard apparatus"
+  },
+  {
+    "code": "27109",
+    "industry": "Manufacture and repair of electric motors, generators, transformers"
+  },
+  {
+    "code": "27201",
+    "industry": "Manufacture of primary batteries"
+  },
+  {
+    "code": "27202",
+    "industry": "Manufacture of secondary batteries"
+  },
+  {
+    "code": "27321",
+    "industry": "Manufacture of telecommunications cables and wires"
+  },
+  {
+    "code": "27322",
+    "industry": "Manufacture of electric power cables and wires"
+  },
+  {
+    "code": "27324",
+    "industry": "Manufacture of wire and cable assemblies and harnesses"
+  },
+  {
+    "code": "27329",
+    "industry": "Manufacture of other electronic and electric wires and cables n.e.c."
+  },
+  {
+    "code": "27330",
+    "industry": "Manufacture and repair of wiring devices"
+  },
+  {
+    "code": "27400",
+    "industry": "Manufacture and repair of electric lamps and lighting equipment"
+  },
+  {
+    "code": "27901",
+    "industry": "Manufacture of fuel cells"
+  },
+  {
+    "code": "27902",
+    "industry": "Manufacture of electrical machinery, apparatus, appliances and supplies"
+  },
+  {
+    "code": "28111",
+    "industry": "Manufacture and repair of engines and turbines except aircraft, vehicle,"
+  },
+  {
+    "code": "28112",
+    "industry": "Manufacture and repair of marine engine"
+  },
+  {
+    "code": "28121",
+    "industry": "Manufacture and repair of pumps (e.g. hydraulic pumps, drainage pumps)"
+  },
+  {
+    "code": "28122",
+    "industry": "Manufacture and repair of taps, cocks and valves"
+  },
+  {
+    "code": "28129",
+    "industry": "Manufacture and repair of pumps, compressors, taps and valves n.e.c."
+  },
+  {
+    "code": "28141",
+    "industry": "Manufacture of bearings (including disc and ball bearings)"
+  },
+  {
+    "code": "28142",
+    "industry": "Manufacture and repair of gears, gearing and driving elements"
+  },
+  {
+    "code": "28150",
+    "industry": "Manufacture and repair of ovens, furnaces and furnace burners"
+  },
+  {
+    "code": "28161",
+    "industry": "Manufacture and repair of lifting and hoisting machinery except electrical"
+  },
+  {
+    "code": "28162",
+    "industry": "Manufacture and repair of lifts and escalators"
+  },
+  {
+    "code": "26202",
+    "industry": "Manufacture of disk drives"
+  },
+  {
+    "code": "28225",
+    "industry": "Manufacture and repair of metal additive manufacturing (AM) equipment"
+  },
+  {
+    "code": "28229",
+    "industry": "Manufacture and repair of metal-forming machinery and machine tools n.e.c."
+  },
+  {
+    "code": "28241",
+    "industry": "Manufacture and repair of oil rigs"
+  },
+  {
+    "code": "28242",
+    "industry": "Manufacture and repair of other oilfield and gasfield machinery and"
+  },
+  {
+    "code": "28243",
+    "industry": "Manufacture and repair of construction machinery and parts"
+  },
+  {
+    "code": "28249",
+    "industry": "Manufacture and repair of machinery for mining, quarrying and"
+  },
+  {
+    "code": "28251",
+    "industry": "Manufacture and repair of machinery for food products processing"
+  },
+  {
+    "code": "28252",
+    "industry": "Manufacture and repair of machinery for beverage production"
+  },
+  {
+    "code": "28253",
+    "industry": "Manufacture and repair of machinery for tobacco processing"
+  },
+  {
+    "code": "28260",
+    "industry": "Manufacture and repair of machinery for textile, apparel and leather"
+  },
+  {
+    "code": "28271",
+    "industry": "Manufacture of probe cards"
+  },
+  {
+    "code": "28272",
+    "industry": "Manufacture of bonding tools"
+  },
+  {
+    "code": "28273",
+    "industry": "Manufacture and repair of semiconductor assembly and testing"
+  },
+  {
+    "code": "28274",
+    "industry": "Manufacture and repair of semiconductor foundry equipment"
+  },
+  {
+    "code": "28291",
+    "industry": "Manufacture and repair of water/waste water treatment equipment"
+  },
+  {
+    "code": "28292",
+    "industry": "Manufacture and repair of plastic processing machinery"
+  },
+  {
+    "code": "28293",
+    "industry": "Manufacture and repair of woodworking machinery"
+  },
+  {
+    "code": "28294",
+    "industry": "Manufacture and repair of polymer additive manufacturing (AM) equipment"
+  },
+  {
+    "code": "28299",
+    "industry": "Manufacture and repair of other special purpose machinery n.e.c."
+  },
+  {
+    "code": "28300",
+    "industry": "Installation of industrial machinery and equipment, mechanical engineering"
+  },
+  {
+    "code": "29100",
+    "industry": "Manufacture and assembly of motor vehicles"
+  },
+  {
+    "code": "29200",
+    "industry": "Manufacture of motor vehicle bodies (coachwork), trailers and semi-trailers"
+  },
+  {
+    "code": "30110",
+    "industry": "Building and repairing of ships, tankers and other ocean-going vessels"
+  },
+  {
+    "code": "30120",
+    "industry": "Building and repair of pleasure crafts, lighters and boats"
+  },
+  {
+    "code": "30200",
+    "industry": "Manufacture and repair of railway and tramway locomotives and rolling"
+  },
+  {
+    "code": "30400",
+    "industry": "Manufacture of military fighting vehicles"
+  },
+  {
+    "code": "30920",
+    "industry": "Manufacture and assembly of bicycles, tricycles, trishaws and invalid"
+  },
+  {
+    "code": "30990",
+    "industry": "Manufacture of other transport equipment n.e.c. (e.g. carts, wagons)"
+  },
+  {
+    "code": "31001",
+    "industry": "Manufacture of furniture and fixtures of wood (including upholstery)"
+  },
+  {
+    "code": "31002",
+    "industry": "Manufacture of furniture of rattan and cane"
+  },
+  {
+    "code": "31003",
+    "industry": "Manufacture of furniture and fixtures primarily of metal"
+  },
+  {
+    "code": "31004",
+    "industry": "Manufacture of furniture of other materials except primarily of stone,"
+  },
+  {
+    "code": "31005",
+    "industry": "Manufacture of window and door screens and shades"
+  },
+  {
+    "code": "31006",
+    "industry": "Manufacture of mattresses including those of foam rubber"
+  },
+  {
+    "code": "31009",
+    "industry": "Manufacture of furniture n.e.c."
+  },
+  {
+    "code": "32111",
+    "industry": "Manufacture of jewellery except costume jewellery"
+  },
+  {
+    "code": "32112",
+    "industry": "Manufacture of pewter ware"
+  },
+  {
+    "code": "32120",
+    "industry": "Manufacture of costume jewellery and related articles"
+  },
+  {
+    "code": "32200",
+    "industry": "Manufacture of musical instruments"
+  },
+  {
+    "code": "28171",
+    "industry": "Manufacture of office machinery and equipment"
+  },
+  {
+    "code": "32909",
+    "industry": "Other manufacturing industries n.e.c."
+  },
+  {
+    "code": "35101",
+    "industry": "Generation of electricity by fossil fuels"
+  },
+  {
+    "code": "35102",
+    "industry": "Generation of electricity by other sources (e.g. solar power, biofuels etc)"
+  },
+  {
+    "code": "35103",
+    "industry": "Transmission, distribution and sale of electricity"
+  },
+  {
+    "code": "35104",
+    "industry": "Other related services (e.g. electricity brokers, meter reading)"
+  },
+  {
+    "code": "35201",
+    "industry": "Manufacture of gas; distribution of gaseous fuels through mains"
+  },
+  {
+    "code": "35202",
+    "industry": "Processing of natural gas"
+  },
+  {
+    "code": "35203",
+    "industry": "Other related services (e.g. arranging for sale of natural gas)"
+  },
+  {
+    "code": "37000",
+    "industry": "Operation of sewer systems (including sewer treatment facilities)"
+  },
+  {
+    "code": "38100",
+    "industry": "Collection of waste"
+  },
+  {
+    "code": "38200",
+    "industry": "Treatment and disposal of waste (including remediation activities)"
+  },
+  {
+    "code": "38301",
+    "industry": "Recycling of metal waste and scrap"
+  },
+  {
+    "code": "38309",
+    "industry": "Recycling of non-metal waste n.e.c. (e.g. marine clay and oil sludge)"
+  },
+  {
+    "code": "41001",
+    "industry": "General contractors (building construction including major upgrading works)"
+  },
+  {
+    "code": "41002",
+    "industry": "Structural repair contractors"
+  },
+  {
+    "code": "41009",
+    "industry": "Building construction n.e.c."
+  },
+  {
+    "code": "42101",
+    "industry": "General contractors (non-building construction)"
+  },
+  {
+    "code": "42201",
+    "industry": "Water and gas pipe-line and sewer construction"
+  },
+  {
+    "code": "42202",
+    "industry": "Communications and power line construction"
+  },
+  {
+    "code": "42901",
+    "industry": "Land reclamation works"
+  },
+  {
+    "code": "42902",
+    "industry": "Dam and drainage construction"
+  },
+  {
+    "code": "42903",
+    "industry": "Marine construction (e.g. harbours, piers, docks, wharves)"
+  },
+  {
+    "code": "42909",
+    "industry": "Construction of other civil engineering projects n.e.c. (e.g. playground systems)"
+  },
+  {
+    "code": "43110",
+    "industry": "Wrecking and demolition works"
+  },
+  {
+    "code": "43122",
+    "industry": "Excavation and earthmoving works"
+  },
+  {
+    "code": "43129",
+    "industry": "Site preparation n.e.c."
+  },
+  {
+    "code": "43210",
+    "industry": "Electrical works"
+  },
+  {
+    "code": "43292",
+    "industry": "Installation of fire protection and security alarm systems"
+  },
+  {
+    "code": "43293",
+    "industry": "Installation of building automated systems for remote monitoring"
+  },
+  {
+    "code": "43294",
+    "industry": "Installation of awning and window shades"
+  },
+  {
+    "code": "43295",
+    "industry": "Installation of thermal and sound insulation (including solar control films)"
+  },
+  {
+    "code": "43296",
+    "industry": "Signcraft installation"
+  },
+  {
+    "code": "43299",
+    "industry": "Other construction installation n.e.c."
+  },
+  {
+    "code": "43301",
+    "industry": "Renovation contractors"
+  },
+  {
+    "code": "43302",
+    "industry": "Tile setting and plastering"
+  },
+  {
+    "code": "43303",
+    "industry": "Joinery and other woodworks (e.g. laminated or parquet flooring)"
+  },
+  {
+    "code": "43304",
+    "industry": "Painting and decorating"
+  },
+  {
+    "code": "43305",
+    "industry": "Glass and glazing works (including mirror and shower screen installation)"
+  },
+  {
+    "code": "43306",
+    "industry": "Curtain walling/cladding works"
+  },
+  {
+    "code": "43307",
+    "industry": "Installation of doors, gates, grilles and windows"
+  },
+  {
+    "code": "43309",
+    "industry": "Building completion and finishing n.e.c."
+  },
+  {
+    "code": "43902",
+    "industry": "Brick laying, stone setting and cement works"
+  },
+  {
+    "code": "35300",
+    "industry": "Supply of air or water for cooling or heating purposes"
+  },
+  {
+    "code": "42102",
+    "industry": "Road and railway construction"
+  },
+  {
+    "code": "43903",
+    "industry": "Roofing works (including timber carcassing)"
+  },
+  {
+    "code": "43905",
+    "industry": "Scaffolding works"
+  },
+  {
+    "code": "43906",
+    "industry": "Sandblasting/Shotblasting works (except ships)"
+  },
+  {
+    "code": "46304",
+    "industry": "Wholesale of confectionery and bakery products"
+  },
+  {
+    "code": "46305",
+    "industry": "Wholesale of ice-cream"
+  },
+  {
+    "code": "46306",
+    "industry": "Wholesale of health supplements"
+  },
+  {
+    "code": "46307",
+    "industry": "Wholesale of liquor, soft drinks and beverages"
+  },
+  {
+    "code": "46308",
+    "industry": "Wholesale of tobacco products"
+  },
+  {
+    "code": "46309",
+    "industry": "Wholesale of food, beverages and tobacco n.e.c. (including dried or canned)"
+  },
+  {
+    "code": "46411",
+    "industry": "Wholesale of textiles and leathers"
+  },
+  {
+    "code": "46412",
+    "industry": "Wholesale of adults' clothing"
+  },
+  {
+    "code": "46414",
+    "industry": "Wholesale of footwear"
+  },
+  {
+    "code": "46415",
+    "industry": "Wholesale of bags, luggage and travel accessories"
+  },
+  {
+    "code": "46421",
+    "industry": "Wholesale of jewellery made from precious metals and stones"
+  },
+  {
+    "code": "46422",
+    "industry": "Wholesale of costume jewellery"
+  },
+  {
+    "code": "46423",
+    "industry": "Wholesale of watches and clocks"
+  },
+  {
+    "code": "46424",
+    "industry": "Wholesale of cosmetics and toiletries"
+  },
+  {
+    "code": "46429",
+    "industry": "Wholesale of personal effects n.e.c."
+  },
+  {
+    "code": "46431",
+    "industry": "Wholesale of furniture (including mattresses, cushions)"
+  },
+  {
+    "code": "46432",
+    "industry": "Wholesale of furnishings (including curtains, carpets, wallpaper)"
+  },
+  {
+    "code": "46433",
+    "industry": "Wholesale of lighting and lighting accessories"
+  },
+  {
+    "code": "46434",
+    "industry": "Wholesale of crockery, cutlery and kitchen utensils"
+  },
+  {
+    "code": "46436",
+    "industry": "Wholesale of audio and video equipment except electrical and electronic"
+  },
+  {
+    "code": "46437",
+    "industry": "Wholesale of musical instruments and scores"
+  },
+  {
+    "code": "46439",
+    "industry": "Wholesale of furniture, home furnishings and other household equipment n.e.c."
+  },
+  {
+    "code": "47533",
+    "industry": "Retail sale of lighting and lighting accessories"
+  },
+  {
+    "code": "46442",
+    "industry": "Wholesale of music and video recordings (e.g. DVDs, Blu-ray discs)"
+  },
+  {
+    "code": "46443",
+    "industry": "Wholesale of toys and games"
+  },
+  {
+    "code": "46449",
+    "industry": "Wholesale of sporting and other recreational goods n.e.c."
+  },
+  {
+    "code": "46451",
+    "industry": "Wholesale of antiques and works of art"
+  },
+  {
+    "code": "46452",
+    "industry": "Wholesale of handicrafts and gifts"
+  },
+  {
+    "code": "46453",
+    "industry": "Wholesale of artificial flowers and plants"
+  },
+  {
+    "code": "46459",
+    "industry": "Wholesale of handicrafts and fancy goods n.e.c."
+  },
+  {
+    "code": "46461",
+    "industry": "Wholesale of medicinal and pharmaceutical products (Western)"
+  },
+  {
+    "code": "46462",
+    "industry": "Wholesale of medicine and herbs (other than Western)"
+  },
+  {
+    "code": "46471",
+    "industry": "Wholesale of paper and paper products"
+  },
+  {
+    "code": "46472",
+    "industry": "Wholesale of packaging materials"
+  },
+  {
+    "code": "46473",
+    "industry": "Wholesale of stationery"
+  },
+  {
+    "code": "46474",
+    "industry": "Wholesale of books and magazines"
+  },
+  {
+    "code": "46479",
+    "industry": "Wholesale of paper, paper and cellophane products and stationery n.e.c."
+  },
+  {
+    "code": "46491",
+    "industry": "Wholesale of optical equipment and supplies (excluding binoculars)"
+  },
+  {
+    "code": "46492",
+    "industry": "Wholesale of photographic equipment and supplies (including binoculars)"
+  },
+  {
+    "code": "46499",
+    "industry": "Wholesale of other household goods n.e.c."
+  },
+  {
+    "code": "46512",
+    "industry": "Wholesale of computer software (except games and cybersecurity software)"
+  },
+  {
+    "code": "46513",
+    "industry": "Wholesale of computer accessories (e.g. memory cards, computer cables)"
+  },
+  {
+    "code": "46514",
+    "industry": "Wholesale of cybersecurity software, hardware and peripheral equipment"
+  },
+  {
+    "code": "46521",
+    "industry": "Wholesale of telecommunications equipment (excluding handphones)"
+  },
+  {
+    "code": "46522",
+    "industry": "Wholesale of electronic components"
+  },
+  {
+    "code": "46530",
+    "industry": "Wholesale of agricultural machinery, equipment and supplies"
+  },
+  {
+    "code": "46541",
+    "industry": "Wholesale of industrial machinery and equipment (e.g. industrial crane)"
+  },
+  {
+    "code": "46592",
+    "industry": "Wholesale of medical, professional, scientific and precision equipment"
+  },
+  {
+    "code": "46599",
+    "industry": "Wholesale of other machinery and equipment n.e.c."
+  },
+  {
+    "code": "46620",
+    "industry": "Wholesale of metals and metal ores (e.g. steel pipes) except general hardware"
+  },
+  {
+    "code": "46631",
+    "industry": "Wholesale of logs, sawn timber, plywood and related products"
+  },
+  {
+    "code": "46632",
+    "industry": "Wholesale of general hardware (e.g. locks, hinges)"
+  },
+  {
+    "code": "46633",
+    "industry": "Wholesale of structural clay and concrete products (e.g. mosaic tiles, bricks)"
+  },
+  {
+    "code": "43904",
+    "industry": "Production of pre-cast components"
+  },
+  {
+    "code": "43909",
+    "industry": "Other specialised construction and related activities n.e.c. (excluding online marketplaces)"
+  },
+  {
+    "code": "46523",
+    "industry": "Wholesale of handphones, handphone peripheral equipment and other telecommunications equipment"
+  },
+  {
+    "code": "46595",
+    "industry": "Wholesale of security and safety equipment"
+  },
+  {
+    "code": "46634",
+    "industry": "Wholesale of paints (including varnishes and supplies)"
+  },
+  {
+    "code": "46635",
+    "industry": "Wholesale of glass"
+  },
+  {
+    "code": "46639",
+    "industry": "Wholesale of construction materials, hardware, plumbing and heating"
+  },
+  {
+    "code": "46641",
+    "industry": "Wholesale of basic industrial chemicals (except fertilisers)"
+  },
+  {
+    "code": "46642",
+    "industry": "Wholesale of chemical fertilisers"
+  },
+  {
+    "code": "46643",
+    "industry": "Wholesale of petrochemical products"
+  },
+  {
+    "code": "46649",
+    "industry": "Wholesale of chemicals and chemical products n.e.c."
+  },
+  {
+    "code": "46651",
+    "industry": "Wholesale of scrap, junk and waste dealers"
+  },
+  {
+    "code": "46659",
+    "industry": "Wholesale of other intermediate products, waste and scrap n.e.c."
+  },
+  {
+    "code": "46661",
+    "industry": "Ship chandlers"
+  },
+  {
+    "code": "46662",
+    "industry": "Ship bunkering"
+  },
+  {
+    "code": "46900",
+    "industry": "Wholesale trade of a variety of goods without a dominant product"
+  },
+  {
+    "code": "47211",
+    "industry": "Retail sale of fruits and vegetables"
+  },
+  {
+    "code": "47212",
+    "industry": "Retail sale of meat, poultry, eggs and seafood"
+  },
+  {
+    "code": "47213",
+    "industry": "Retail sale of confectionery and bakery products (not manufactured on site)"
+  },
+  {
+    "code": "47214",
+    "industry": "Retail sale of health supplements"
+  },
+  {
+    "code": "47219",
+    "industry": "Retail sale of food n.e.c."
+  },
+  {
+    "code": "47220",
+    "industry": "Retail sale of beverages"
+  },
+  {
+    "code": "47230",
+    "industry": "Retail sale of tobacco products"
+  },
+  {
+    "code": "47311",
+    "industry": "Retail sale of motor vehicles except motorcycles and scooters"
+  },
+  {
+    "code": "47312",
+    "industry": "Retail sale of motorcycles and scooters"
+  },
+  {
+    "code": "47313",
+    "industry": "Retail sale of tyres and batteries"
+  },
+  {
+    "code": "47314",
+    "industry": "Retail sale of spare parts and accessories for motor vehicles"
+  },
+  {
+    "code": "47320",
+    "industry": "Retail sale of automotive fuel (e.g. petrol kiosks, CNG refilling stations)"
+  },
+  {
+    "code": "47412",
+    "industry": "Retail sale of computer hardware (including handheld computers)"
+  },
+  {
+    "code": "47415",
+    "industry": "Retail sale of cybersecurity software, hardware and peripheral equipment"
+  },
+  {
+    "code": "47510",
+    "industry": "Retail sale of textiles"
+  },
+  {
+    "code": "47521",
+    "industry": "Retail sale of paints"
+  },
+  {
+    "code": "47522",
+    "industry": "Retail sale of hardware (e.g. chains, changkols, axes)"
+  },
+  {
+    "code": "47531",
+    "industry": "Retail sale of furniture (including mattresses, cushions)"
+  },
+  {
+    "code": "47532",
+    "industry": "Retail sale of furnishings (e.g. curtains, carpets, pillow cases)"
+  },
+  {
+    "code": "47534",
+    "industry": "Retail sale of crockery, cutlery and kitchen utensils"
+  },
+  {
+    "code": "47721",
+    "industry": "Retail sale of cosmetics and toiletries (including skin care products)"
+  },
+  {
+    "code": "47722",
+    "industry": "Pharmacies and drug stores (Western)"
+  },
+  {
+    "code": "47723",
+    "industry": "Chinese medicine shops"
+  },
+  {
+    "code": "47729",
+    "industry": "Retail sale of pharmaceutical and medical goods n.e.c."
+  },
+  {
+    "code": "47732",
+    "industry": "Retail sale of costume jewellery"
+  },
+  {
+    "code": "47733",
+    "industry": "Retail sale of watches and clocks"
+  },
+  {
+    "code": "47739",
+    "industry": "Retail sale of personal effects n.e.c."
+  },
+  {
+    "code": "47741",
+    "industry": "Retail sale of antiques and works of art"
+  },
+  {
+    "code": "47742",
+    "industry": "Retail sale of handicrafts, collectibles and gifts"
+  },
+  {
+    "code": "47743",
+    "industry": "Retail sale of cut flowers (including wreaths)"
+  },
+  {
+    "code": "47744",
+    "industry": "Retail sale of artificial flowers and plants"
+  },
+  {
+    "code": "47745",
+    "industry": "Retail sale of aquarium fishes (including food and accessories)"
+  },
+  {
+    "code": "47746",
+    "industry": "Retail sale of pet birds and animals (including food and accessories)"
+  },
+  {
+    "code": "47749",
+    "industry": "Retail sale of handicrafts and fancy goods, flowers, plants and pet animals"
+  },
+  {
+    "code": "47751",
+    "industry": "Retail sale of spectacles and other optical goods"
+  },
+  {
+    "code": "47752",
+    "industry": "Retail sale of cameras and other photographic goods"
+  },
+  {
+    "code": "47759",
+    "industry": "Retail sale of optical and photographic goods n.e.c."
+  },
+  {
+    "code": "47761",
+    "industry": "Retail sale of joss paper and other ceremonial products"
+  },
+  {
+    "code": "47762",
+    "industry": "Retail sale of liquefied petroleum gas (LPG)"
+  },
+  {
+    "code": "47769",
+    "industry": "Retail sale of specific commodities n.e.c."
+  },
+  {
+    "code": "47770",
+    "industry": "Retail sale of second-hand goods in stores"
+  },
+  {
+    "code": "47801",
+    "industry": "Stalls (including pushcarts) selling uncooked food"
+  },
+  {
+    "code": "49101",
+    "industry": "Railroad services"
+  },
+  {
+    "code": "49102",
+    "industry": "Mass rapid transit systems (including light rail)"
+  },
+  {
+    "code": "49211",
+    "industry": "Public bus services (scheduled services)"
+  },
+  {
+    "code": "49212",
+    "industry": "Chartered bus services (including school buses)"
+  },
+  {
+    "code": "49213",
+    "industry": "Inter-country bus services"
+  },
+  {
+    "code": "47411",
+    "industry": "Retail sale of handphones and peripheral equipment"
+  },
+  {
+    "code": "49220",
+    "industry": "Aerial cableways (including cable car services)"
+  },
+  {
+    "code": "49231",
+    "industry": "Freight transport by road"
+  },
+  {
+    "code": "49300",
+    "industry": "Transport via pipelines"
+  },
+  {
+    "code": "50011",
+    "industry": "International cruise services"
+  },
+  {
+    "code": "50012",
+    "industry": "Other sight-seeing cruise services (e.g. harbour and river cruises)"
+  },
+  {
+    "code": "50013",
+    "industry": "Passenger ferry services"
+  },
+  {
+    "code": "50014",
+    "industry": "Chartering of ships and boats with crew (passenger)"
+  },
+  {
+    "code": "51001",
+    "industry": "Airlines (passenger)"
+  },
+  {
+    "code": "51002",
+    "industry": "Airlines (freight)"
+  },
+  {
+    "code": "51003",
+    "industry": "Branches of foreign airlines (passenger)"
+  },
+  {
+    "code": "51004",
+    "industry": "Branches of foreign airlines (freight)"
+  },
+  {
+    "code": "51005",
+    "industry": "Aircraft chartering with operator"
+  },
+  {
+    "code": "52101",
+    "industry": "General warehousing"
+  },
+  {
+    "code": "52102",
+    "industry": "Refrigerated warehousing and storage"
+  },
+  {
+    "code": "52229",
+    "industry": "Supporting services to water transport n.e.c."
+  },
+  {
+    "code": "52231",
+    "industry": "Representative offices of foreign airlines"
+  },
+  {
+    "code": "52232",
+    "industry": "Airline agencies (freight)"
+  },
+  {
+    "code": "52233",
+    "industry": "Airport operation services"
+  },
+  {
+    "code": "52234",
+    "industry": "Airport terminal services (e.g. ground service activities)"
+  },
+  {
+    "code": "52239",
+    "industry": "Supporting services to air transport n.e.c."
+  },
+  {
+    "code": "52251",
+    "industry": "Classification societies"
+  },
+  {
+    "code": "52252",
+    "industry": "Marine surveying services other than classification societies"
+  },
+  {
+    "code": "53100",
+    "industry": "National post activities (e.g. postal services)"
+  },
+  {
+    "code": "53200",
+    "industry": "Courier activities other than national post activities"
+  },
+  {
+    "code": "55900",
+    "industry": "Hostels and dormitories for students, workers and other individuals"
+  },
+  {
+    "code": "56111",
+    "industry": "Restaurants"
+  },
+  {
+    "code": "56121",
+    "industry": "Fast food outlets"
+  },
+  {
+    "code": "56130",
+    "industry": "Pubs"
+  },
+  {
+    "code": "58110",
+    "industry": "Publishing of books, brochures, musical books and other publications"
+  },
+  {
+    "code": "58120",
+    "industry": "Publishing of directories and mailing lists (including financial databases)"
+  },
+  {
+    "code": "58131",
+    "industry": "Publishing of news"
+  },
+  {
+    "code": "58132",
+    "industry": "Publishing of journals, periodicals and magazines"
+  },
+  {
+    "code": "59112",
+    "industry": "Production of advertisements, corporate videos and event videos"
+  },
+  {
+    "code": "59114",
+    "industry": "Animation production"
+  },
+  {
+    "code": "59201",
+    "industry": "Sound recording production"
+  },
+  {
+    "code": "59202",
+    "industry": "Music publishing and distribution activities"
+  },
+  {
+    "code": "60100",
+    "industry": "Radio programme production and broadcasting"
+  },
+  {
+    "code": "61012",
+    "industry": "Mobile cellular and other wireless telecommunications network operation"
+  },
+  {
+    "code": "61013",
+    "industry": "Satellite telecommunications network operation"
+  },
+  {
+    "code": "61091",
+    "industry": "Telecommunications resellers/third party telecommunications providers"
+  },
+  {
+    "code": "61092",
+    "industry": "Internet access providers, include ISPs"
+  },
+  {
+    "code": "52109",
+    "industry": "Specialised storage n.e.c."
+  },
+  {
+    "code": "64130",
+    "industry": "Wholesale banks"
+  },
+  {
+    "code": "49214",
+    "industry": "Street-hail and ride-hail service providers"
+  },
+  {
+    "code": "50021",
+    "industry": "Shipping companies, including chartering of ships and boats with crew (freight)"
+  },
+  {
+    "code": "50023",
+    "industry": "Branches of foreign shipping lines"
+  },
+  {
+    "code": "52241",
+    "industry": "Container depot services"
+  },
+  {
+    "code": "52243",
+    "industry": "Stevedoring services"
+  },
+  {
+    "code": "52292",
+    "industry": "Freight transport arrangement"
+  },
+  {
+    "code": "55101",
+    "industry": "Hotels"
+  },
+  {
+    "code": "55102",
+    "industry": "Chalets"
+  },
+  {
+    "code": "55103",
+    "industry": "Short term accommodation activities other than hotels and chalets"
+  },
+  {
+    "code": "56112",
+    "industry": "Cafes"
+  },
+  {
+    "code": "58190",
+    "industry": "Other publishing activities (excluding online marketplaces)"
+  },
+  {
+    "code": "58201",
+    "industry": "Publishing of games software/applications"
+  },
+  {
+    "code": "58202",
+    "industry": "Publishing of software/applications (non-games)"
+  },
+  {
+    "code": "59111",
+    "industry": "Movie production"
+  },
+  {
+    "code": "59119",
+    "industry": "Movie, video, television and other programme production activities n.e.c."
+  },
+  {
+    "code": "59120",
+    "industry": "Movie, video, television and other programme post-production activities (including remastering)"
+  },
+  {
+    "code": "59131",
+    "industry": "Movie distribution"
+  },
+  {
+    "code": "59139",
+    "industry": "Movie, video, television and other programme distribution activities n.e.c."
+  },
+  {
+    "code": "59140",
+    "industry": "Movie projection activities (including cinemas)"
+  },
+  {
+    "code": "64150",
+    "industry": "Finance companies (with deposit taking functions)"
+  },
+  {
+    "code": "64190",
+    "industry": "Other monetary intermediation"
+  },
+  {
+    "code": "64201",
+    "industry": "Bank/Financial holding companies (including insurance holding company)"
+  },
+  {
+    "code": "64202",
+    "industry": "Other holding companies"
+  },
+  {
+    "code": "64910",
+    "industry": "Financial leasing companies"
+  },
+  {
+    "code": "64921",
+    "industry": "Thrift and loan societies and credit associations"
+  },
+  {
+    "code": "64922",
+    "industry": "Credit card services"
+  },
+  {
+    "code": "64923",
+    "industry": "Mutual benefits organisations"
+  },
+  {
+    "code": "64924",
+    "industry": "Money-lending"
+  },
+  {
+    "code": "64925",
+    "industry": "Pawnbrokerage"
+  },
+  {
+    "code": "64929",
+    "industry": "Other credit agencies n.e.c. (e.g. motor finance)"
+  },
+  {
+    "code": "64991",
+    "industry": "Factoring companies"
+  },
+  {
+    "code": "64992",
+    "industry": "Representative offices of foreign banks"
+  },
+  {
+    "code": "64999",
+    "industry": "Other financial service activities, except insurance and pension funding"
+  },
+  {
+    "code": "65110",
+    "industry": "Life insurance"
+  },
+  {
+    "code": "65121",
+    "industry": "Marine insurance"
+  },
+  {
+    "code": "65122",
+    "industry": "Captive insurance"
+  },
+  {
+    "code": "65123",
+    "industry": "Import, export and credit insurance"
+  },
+  {
+    "code": "65124",
+    "industry": "General insurance (except marine and import, export & credit insurance)"
+  },
+  {
+    "code": "65201",
+    "industry": "Life reinsurance"
+  },
+  {
+    "code": "65202",
+    "industry": "General reinsurance"
+  },
+  {
+    "code": "65301",
+    "industry": "Provident funding"
+  },
+  {
+    "code": "65302",
+    "industry": "Pension funding"
+  },
+  {
+    "code": "66110",
+    "industry": "Securities and commodities exchange"
+  },
+  {
+    "code": "66121",
+    "industry": "Stock, share and bond brokers and dealers"
+  },
+  {
+    "code": "66122",
+    "industry": "Foreign exchange brokers and dealers"
+  },
+  {
+    "code": "66123",
+    "industry": "Gold bullion brokers and dealers"
+  },
+  {
+    "code": "66124",
+    "industry": "Commodity (excluding gold) and futures brokers and dealers"
+  },
+  {
+    "code": "66125",
+    "industry": "Carbon credit brokers/traders"
+  },
+  {
+    "code": "66129",
+    "industry": "Security dealings and commodity contracts brokerage activities n.e.c."
+  },
+  {
+    "code": "66192",
+    "industry": "Corporate finance advisory services"
+  },
+  {
+    "code": "66193",
+    "industry": "Clearing and settlement of financial instruments"
+  },
+  {
+    "code": "66195",
+    "industry": "Transaction/Payment processing services"
+  },
+  {
+    "code": "66210",
+    "industry": "Risk and damage evaluation (e.g. loss adjusting, claims adjusting)"
+  },
+  {
+    "code": "66221",
+    "industry": "Insurance agencies and agents (including financial planning services)"
+  },
+  {
+    "code": "66222",
+    "industry": "Insurance brokers"
+  },
+  {
+    "code": "66291",
+    "industry": "Representative offices of foreign insurers and professional reinsurers"
+  },
+  {
+    "code": "66292",
+    "industry": "Captive managers"
+  },
+  {
+    "code": "66299",
+    "industry": "Other activities auxiliary to insurance and pension funding n.e.c."
+  },
+  {
+    "code": "66301",
+    "industry": "Traditional/Long-only asset/Portfolio management"
+  },
+  {
+    "code": "66302",
+    "industry": "Hedge fund management"
+  },
+  {
+    "code": "66304",
+    "industry": "Private equity firms"
+  },
+  {
+    "code": "66305",
+    "industry": "Venture capital activities"
+  },
+  {
+    "code": "68201",
+    "industry": "Real estate agencies and valuation services"
+  },
+  {
+    "code": "68202",
+    "industry": "Town councils"
+  },
+  {
+    "code": "70101",
+    "industry": "Activities of head and regional head offices; Centralised administrative"
+  },
+  {
+    "code": "70102",
+    "industry": "Business representative offices"
+  },
+  {
+    "code": "70202",
+    "industry": "Management consultancy services for healthcare organisations"
+  },
+  {
+    "code": "70203",
+    "industry": "Management consultancy services for hotels"
+  },
+  {
+    "code": "70204",
+    "industry": "Human resource consultancy services"
+  },
+  {
+    "code": "70206",
+    "industry": "Port, shipping and maritime-related consultancy services"
+  },
+  {
+    "code": "70209",
+    "industry": "Management consultancy services n.e.c."
+  },
+  {
+    "code": "71111",
+    "industry": "Architectural services"
+  },
+  {
+    "code": "71112",
+    "industry": "Landscape design and landscape architecture"
+  },
+  {
+    "code": "71113",
+    "industry": "Quantity surveying services"
+  },
+  {
+    "code": "71114",
+    "industry": "Land surveying services"
+  },
+  {
+    "code": "71121",
+    "industry": "General building engineering design and consultancy services"
+  },
+  {
+    "code": "71122",
+    "industry": "Process and industrial plant engineering design and consultancy services"
+  },
+  {
+    "code": "63111",
+    "industry": "Data centres"
+  },
+  {
+    "code": "64993",
+    "industry": "Remittance services"
+  },
+  {
+    "code": "64994",
+    "industry": "Treasury centres"
+  },
+  {
+    "code": "68203",
+    "industry": "Residential (other than town councils), commercial and industrial real estate management"
+  },
+  {
+    "code": "69202",
+    "industry": "Book-keeping services (excluding online marketplaces)"
+  },
+  {
+    "code": "70201",
+    "industry": "Management consultancy services"
+  },
+  {
+    "code": "70205",
+    "industry": "Public relations, marketing and brand consultancy services"
+  },
+  {
+    "code": "71123",
+    "industry": "Engineering design and consultancy services in energy management and"
+  },
+  {
+    "code": "71125",
+    "industry": "Infrastructure engineering design and consultancy services"
+  },
+  {
+    "code": "71126",
+    "industry": "Engineering design and consultancy services supporting mining, oil and gas"
+  },
+  {
+    "code": "71129",
+    "industry": "Engineering design and consultancy activities n.e.c."
+  },
+  {
+    "code": "72104",
+    "industry": "Research and experimental development on engineering"
+  },
+  {
+    "code": "72109",
+    "industry": "Research and experimental development on natural sciences n.e.c."
+  },
+  {
+    "code": "72200",
+    "industry": "Research and experimental development on social sciences and"
+  },
+  {
+    "code": "73100",
+    "industry": "Advertising activities"
+  },
+  {
+    "code": "73200",
+    "industry": "Market research and public opinion polling"
+  },
+  {
+    "code": "74111",
+    "industry": "Electronics-related industrial design services"
+  },
+  {
+    "code": "74112",
+    "industry": "Transport-related industrial design services"
+  },
+  {
+    "code": "74113",
+    "industry": "Furniture design services"
+  },
+  {
+    "code": "74119",
+    "industry": "Industrial design activities n.e.c."
+  },
+  {
+    "code": "74191",
+    "industry": "Interior design services"
+  },
+  {
+    "code": "74192",
+    "industry": "Art and graphic design services"
+  },
+  {
+    "code": "74193",
+    "industry": "Fashion (including accessories) design services"
+  },
+  {
+    "code": "74194",
+    "industry": "Exhibition stand design services"
+  },
+  {
+    "code": "74199",
+    "industry": "Other specialised design activities n.e.c."
+  },
+  {
+    "code": "74901",
+    "industry": "Translation services"
+  },
+  {
+    "code": "74909",
+    "industry": "Other professional, scientific and technical activities n.e.c."
+  },
+  {
+    "code": "75000",
+    "industry": "Veterinary activities"
+  },
+  {
+    "code": "78300",
+    "industry": "Management of human resource functions"
+  },
+  {
+    "code": "79101",
+    "industry": "Travel agencies and tour operators (mainly inbound)"
+  },
+  {
+    "code": "79102",
+    "industry": "Travel agencies and tour operators (mainly outbound)"
+  },
+  {
+    "code": "81291",
+    "industry": "Pest control services not in connection with agriculture"
+  },
+  {
+    "code": "81292",
+    "industry": "Cleaning of swimming pools, spas and fountains"
+  },
+  {
+    "code": "82191",
+    "industry": "Stenographic and secretarial services"
+  },
+  {
+    "code": "82192",
+    "industry": "Duplicating and photo-copying services"
+  },
+  {
+    "code": "82199",
+    "industry": "Other specialised office support activities n.e.c."
+  },
+  {
+    "code": "82200",
+    "industry": "Call centres"
+  },
+  {
+    "code": "82301",
+    "industry": "Exhibition organisers"
+  },
+  {
+    "code": "82302",
+    "industry": "Convention/Conference organisers"
+  },
+  {
+    "code": "82303",
+    "industry": "Event/Concert organisers"
+  },
+  {
+    "code": "82304",
+    "industry": "Exhibition stand contractors"
+  },
+  {
+    "code": "82911",
+    "industry": "Debt collection services"
+  },
+  {
+    "code": "82912",
+    "industry": "Credit rating agencies"
+  },
+  {
+    "code": "82920",
+    "industry": "Packaging activities"
+  },
+  {
+    "code": "82991",
+    "industry": "Activities of auction houses"
+  },
+  {
+    "code": "84110",
+    "industry": "Executive, legislative and other general public administration"
+  },
+  {
+    "code": "84120",
+    "industry": "Public administration of economic and social programmes"
+  },
+  {
+    "code": "84210",
+    "industry": "Foreign affairs"
+  },
+  {
+    "code": "84221",
+    "industry": "Armed forces"
+  },
+  {
+    "code": "84229",
+    "industry": "Defence activities n.e.c."
+  },
+  {
+    "code": "84231",
+    "industry": "Judiciary and related services"
+  },
+  {
+    "code": "84232",
+    "industry": "Police"
+  },
+  {
+    "code": "84233",
+    "industry": "Prisons"
+  },
+  {
+    "code": "84234",
+    "industry": "Other places of detention, correction and rehabilitation"
+  },
+  {
+    "code": "84235",
+    "industry": "Civil defence"
+  },
+  {
+    "code": "84239",
+    "industry": "Public order and safety activities n.e.c."
+  },
+  {
+    "code": "85101",
+    "industry": "Nurseries and kindergartens"
+  },
+  {
+    "code": "85102",
+    "industry": "Primary schools"
+  },
+  {
+    "code": "72101",
+    "industry": "Research and experimental development on biotechnology (excluding medical science)"
+  },
+  {
+    "code": "72106",
+    "industry": "Research and experimental development on medical science"
+  },
+  {
+    "code": "72102",
+    "industry": "Research and experimental development on electronics (excluding medical science)"
+  },
+  {
+    "code": "72103",
+    "industry": "Research and experimental development on chemicals (excluding medical science)"
+  },
+  {
+    "code": "72105",
+    "industry": "Research and experimental development on environment and clean technologies (excluding biotechnology)"
+  },
+  {
+    "code": "74902",
+    "industry": "Brokerage and consultancy services of intellectual property assets"
+  },
+  {
+    "code": "85220",
+    "industry": "Technical and vocational secondary and post-secondary non-tertiary"
+  },
+  {
+    "code": "85502",
+    "industry": "Examination and accreditation agencies for education services"
+  },
+  {
+    "code": "86102",
+    "industry": "Community hospitals"
+  },
+  {
+    "code": "86109",
+    "industry": "Other hospitals n.e.c. (e.g. psychiatric hospital)"
+  },
+  {
+    "code": "86201",
+    "industry": "Clinics and other general medical services (Western)"
+  },
+  {
+    "code": "86202",
+    "industry": "Clinics and other general medical services (Non-Western)"
+  },
+  {
+    "code": "86203",
+    "industry": "Specialised medical services (including day surgical centres)"
+  },
+  {
+    "code": "86204",
+    "industry": "Dental services"
+  },
+  {
+    "code": "86901",
+    "industry": "Medical laboratories (e.g. blood analysis laboratories)"
+  },
+  {
+    "code": "86902",
+    "industry": "Medical diagnostic imaging centres (e.g. X-ray services)"
+  },
+  {
+    "code": "86903",
+    "industry": "Ambulance and medical evacuation services"
+  },
+  {
+    "code": "86904",
+    "industry": "Home healthcare services"
+  },
+  {
+    "code": "86905",
+    "industry": "Dialysis services"
+  },
+  {
+    "code": "87010",
+    "industry": "Nursing and personal care facilities (including nursing homes and hospices)"
+  },
+  {
+    "code": "87021",
+    "industry": "Residential care services for the elderly (e.g. home for the aged)"
+  },
+  {
+    "code": "87022",
+    "industry": "Residential care services for children (e.g. children\u2019s homes, orphanages)"
+  },
+  {
+    "code": "88911",
+    "industry": "Child care services for pre-school children (including infant care services)"
+  },
+  {
+    "code": "88919",
+    "industry": "Social services without accommodation for children, youth and families n.e.c."
+  },
+  {
+    "code": "88991",
+    "industry": "Job training and vocational rehabilitation services"
+  },
+  {
+    "code": "88992",
+    "industry": "Charitable and other supporting activities aimed at humanitarian work"
+  },
+  {
+    "code": "88999",
+    "industry": "Other social services without accommodation n.e.c."
+  },
+  {
+    "code": "90002",
+    "industry": "Performing arts venue operation"
+  },
+  {
+    "code": "90009",
+    "industry": "Dramatic arts, music and other arts production-related activities n.e.c."
+  },
+  {
+    "code": "91010",
+    "industry": "Libraries and archives activities"
+  },
+  {
+    "code": "91021",
+    "industry": "Museums"
+  },
+  {
+    "code": "91029",
+    "industry": "Preservation of historical sites, buildings, artefacts and paintings, cultural"
+  },
+  {
+    "code": "91030",
+    "industry": "Botanical and zoological gardens and nature reserves activities"
+  },
+  {
+    "code": "92001",
+    "industry": "Horse-racing and other betting activities"
+  },
+  {
+    "code": "92002",
+    "industry": "Casinos"
+  },
+  {
+    "code": "93111",
+    "industry": "Fitness centres and gymnasiums"
+  },
+  {
+    "code": "93120",
+    "industry": "Activities of sports clubs/associations and related activities"
+  },
+  {
+    "code": "93201",
+    "industry": "Amusement theme parks"
+  },
+  {
+    "code": "93202",
+    "industry": "Game arcade, online game aggregator, LAN game operators and gaming"
+  },
+  {
+    "code": "93203",
+    "industry": "Night clubs, discotheques, dance clubs and karaoke lounges"
+  },
+  {
+    "code": "93204",
+    "industry": "Recreation clubs (including country clubs)"
+  },
+  {
+    "code": "94110",
+    "industry": "Activities of business and employers' membership organisations"
+  },
+  {
+    "code": "88101",
+    "industry": "Social services for the elderly"
+  },
+  {
+    "code": "94992",
+    "industry": "Ethnic associations (including clan associations, huay kuans)"
+  },
+  {
+    "code": "94993",
+    "industry": "Associations for hobbies, recreational, cultural and extra-curricular"
+  },
+  {
+    "code": "94995",
+    "industry": "Organisations for the protection of the environment and animals"
+  },
+  {
+    "code": "94999",
+    "industry": "Activities of other membership organisations n.e.c."
+  },
+  {
+    "code": "95110",
+    "industry": "Repair and maintenance of computer hardware, data processing"
+  },
+  {
+    "code": "95120",
+    "industry": "Repair of communications equipment (e.g. mobile phones and fax machines)"
+  },
+  {
+    "code": "95220",
+    "industry": "Repair of domestic electrical/electronic appliances except audio and"
+  },
+  {
+    "code": "95230",
+    "industry": "Repair of footwear and leather goods"
+  },
+  {
+    "code": "95240",
+    "industry": "Repair and restoration of cabinets, furniture, upholstery, window shades"
+  },
+  {
+    "code": "95291",
+    "industry": "Repair of bicycles and tricycles"
+  },
+  {
+    "code": "95292",
+    "industry": "Repair of watches and clocks"
+  },
+  {
+    "code": "95293",
+    "industry": "Repair of jewellery"
+  },
+  {
+    "code": "95302",
+    "industry": "Car washing and related services"
+  },
+  {
+    "code": "95303",
+    "industry": "Vehicle inspection and valuation services"
+  },
+  {
+    "code": "96011",
+    "industry": "Laundry and dry cleaning services except self-operated laundries"
+  },
+  {
+    "code": "96012",
+    "industry": "Self-operated laundries"
+  },
+  {
+    "code": "96021",
+    "industry": "Hairdressing salons/shops (including barber shops)"
+  },
+  {
+    "code": "85211",
+    "industry": "Secondary schools including combined primary and secondary schools"
+  },
+  {
+    "code": "85509",
+    "industry": "Educational support services n.e.c. (excluding online marketplaces)"
+  },
+  {
+    "code": "86909",
+    "industry": "Other health services n.e.c. (excluding online marketplaces)"
+  },
+  {
+    "code": "90003",
+    "industry": "Orchestras, musical bands, choirs and dance groups"
+  },
+  {
+    "code": "32502",
+    "industry": "Manufacture of medical disposables and surgical supplies"
+  },
+  {
+    "code": "96022",
+    "industry": "Beauty salons and spas (including slimming, skin care and hair care centres)"
+  },
+  {
+    "code": "96023",
+    "industry": "Manicure and pedicure services"
+  },
+  {
+    "code": "96024",
+    "industry": "Massage parlours and foot reflexology"
+  },
+  {
+    "code": "96091",
+    "industry": "Friendship, match-making and dating services"
+  },
+  {
+    "code": "96092",
+    "industry": "Social escort services"
+  },
+  {
+    "code": "96093",
+    "industry": "Astrology, palmistry and other fortune telling services"
+  },
+  {
+    "code": "96094",
+    "industry": "Training of pets and animals"
+  },
+  {
+    "code": "96095",
+    "industry": "Care services for pets and animals"
+  },
+  {
+    "code": "97001",
+    "industry": "Activities of households as employers of domestic workers"
+  },
+  {
+    "code": "97002",
+    "industry": "Activities of households as employers of other domestic personnel"
+  },
+  {
+    "code": "99010",
+    "industry": "Foreign embassies and trade representative offices"
+  },
+  {
+    "code": "99020",
+    "industry": "Foreign armed forces"
+  },
+  {
+    "code": "99090",
+    "industry": "Other extra-territorial organisations and bodies"
+  },
+  {
+    "code": "03209",
+    "industry": "Operation of fish hatcheries and fish farms n.e.c."
+  },
+  {
+    "code": "09002",
+    "industry": "Service activities incidental to oil and gas extraction"
+  },
+  {
+    "code": "10501",
+    "industry": "Manufacture of condensed and evaporated milk"
+  },
+  {
+    "code": "10509",
+    "industry": "Manufacture of dairy products n.e.c."
+  },
+  {
+    "code": "10619",
+    "industry": "Manufacture of grain mill products n.e.c."
+  },
+  {
+    "code": "10712",
+    "industry": "Manufacture of bread, cakes and confectionery"
+  },
+  {
+    "code": "10733",
+    "industry": "Manufacture of non-chocolate confectionery"
+  },
+  {
+    "code": "10791",
+    "industry": "Manufacture of sauces including soya bean sauce"
+  },
+  {
+    "code": "10793",
+    "industry": "Manufacture and processing of spices"
+  },
+  {
+    "code": "10794",
+    "industry": "Manufacture of chips, crackers and other titbits"
+  },
+  {
+    "code": "10799",
+    "industry": "Manufacture of other food products n.e.c."
+  },
+  {
+    "code": "11041",
+    "industry": "Manufacture of soft drinks, production of mineral waters"
+  },
+  {
+    "code": "13929",
+    "industry": "Manufacture of made-up textile articles except apparel n.e.c."
+  },
+  {
+    "code": "14109",
+    "industry": "Manufacture of wearing apparel except fur apparel n.e.c."
+  },
+  {
+    "code": "15129",
+    "industry": "Manufacture of saddlery, harness and articles of leather n.e.c."
+  },
+  {
+    "code": "17099",
+    "industry": "Manufacture of other articles of paper and paperboard n.e.c."
+  },
+  {
+    "code": "18113",
+    "industry": "Commercial printing"
+  },
+  {
+    "code": "20131",
+    "industry": "Manufacture of petrochemical primary products"
+  },
+  {
+    "code": "20241",
+    "industry": "Manufacture of food chemicals and additives"
+  },
+  {
+    "code": "20299",
+    "industry": "Manufacture of other chemical products n.e.c."
+  },
+  {
+    "code": "22211",
+    "industry": "Manufacture of plastic tableware, household and kitchen ware"
+  },
+  {
+    "code": "22213",
+    "industry": "Manufacture of plastic sheet, film and articles thereof"
+  },
+  {
+    "code": "22214",
+    "industry": "Manufacture of plastic bottles, boxes and containers"
+  },
+  {
+    "code": "23912",
+    "industry": "Manufacture of tiles, pipes and channels"
+  },
+  {
+    "code": "23959",
+    "industry": "Manufacture of articles of concrete, cement and plaster n.e.c."
+  },
+  {
+    "code": "23960",
+    "industry": "Cutting, shaping and finishing of stone"
+  },
+  {
+    "code": "23993",
+    "industry": "Manufacture of other insulation products"
+  },
+  {
+    "code": "23994",
+    "industry": "Manufacture of non-structural pre-cast components"
+  },
+  {
+    "code": "23999",
+    "industry": "Manufacture of other non-metallic mineral products n.e.c."
+  },
+  {
+    "code": "25119",
+    "industry": "Manufacture of structural metal products n.e.c."
+  },
+  {
+    "code": "25139",
+    "industry": "Manufacture and repair of steam generators n.e.c."
+  },
+  {
+    "code": "25200",
+    "industry": "Manufacture and repair of weapons and ammunition"
+  },
+  {
+    "code": "25941",
+    "industry": "Manufacture of uninsulated wire"
+  },
+  {
+    "code": "25996",
+    "industry": "Manufacture of kitchen and household utensils"
+  },
+  {
+    "code": "25999",
+    "industry": "Manufacture of other fabricated metal products n.e.c."
+  },
+  {
+    "code": "26111",
+    "industry": "Manufacture of discrete devices"
+  },
+  {
+    "code": "26301",
+    "industry": "Manufacture of telecommunications apparatus"
+  },
+  {
+    "code": "26304",
+    "industry": "Manufacture of electronic security systems"
+  },
+  {
+    "code": "26522",
+    "industry": "Manufacture of electro-mechanical watches and clocks"
+  },
+  {
+    "code": "27323",
+    "industry": "Manufacture of enamelled wires"
+  },
+  {
+    "code": "27501",
+    "industry": "Manufacture of electrical household appliances"
+  },
+  {
+    "code": "27509",
+    "industry": "Manufacture of domestic appliances n.e.c."
+  },
+  {
+    "code": "28169",
+    "industry": "Manufacture and repair of lifting and handling equipment n.e.c."
+  },
+  {
+    "code": "28181",
+    "industry": "Manufacture and repair of industrial robots"
+  },
+  {
+    "code": "28224",
+    "industry": "Manufacture of machine tool accessories"
+  },
+  {
+    "code": "29300",
+    "industry": "Manufacture of parts and accessories for motor vehicles"
+  },
+  {
+    "code": "30301",
+    "industry": "Manufacture and assembly of aircraft and spacecraft"
+  },
+  {
+    "code": "26125",
+    "industry": "Manufacture of electronic display devices except light emitting diodes"
+  },
+  {
+    "code": "96029",
+    "industry": "Beauty and other personal care services n.e.c. (excluding online marketplaces)"
+  },
+  {
+    "code": "96099",
+    "industry": "Other personal service activities n.e.c. (excluding online marketplaces)"
+  },
+  {
+    "code": "30302",
+    "industry": "Repair and servicing of aircraft and spacecraft"
+  },
+  {
+    "code": "30910",
+    "industry": "Manufacture and assembly of motorcycles and scooters"
+  },
+  {
+    "code": "32119",
+    "industry": "Manufacture of jewellery and related articles n.e.c."
+  },
+  {
+    "code": "32300",
+    "industry": "Manufacture of sporting and athletic goods"
+  },
+  {
+    "code": "32503",
+    "industry": "Manufacture of implantables and artificial limbs"
+  },
+  {
+    "code": "36000",
+    "industry": "Collection, purification and distribution of water"
+  },
+  {
+    "code": "43121",
+    "industry": "Soil investigation, treatment and stabilisation"
+  },
+  {
+    "code": "43291",
+    "industry": "Installation and erection of building equipment"
+  },
+  {
+    "code": "43901",
+    "industry": "Foundation works"
+  },
+  {
+    "code": "46302",
+    "industry": "Wholesale of livestock, meat, poultry, eggs and seafood"
+  },
+  {
+    "code": "46303",
+    "industry": "Wholesale of a general line (wide range) of groceries"
+  },
+  {
+    "code": "46413",
+    "industry": "Wholesale of children and infants\u2019 clothing"
+  },
+  {
+    "code": "46416",
+    "industry": "Wholesale of sewing and clothing accessories"
+  },
+  {
+    "code": "46435",
+    "industry": "Wholesale of household electrical appliances and equipment"
+  },
+  {
+    "code": "46441",
+    "industry": "Wholesale of sporting goods and equipment"
+  },
+  {
+    "code": "46444",
+    "industry": "Wholesale of computer games"
+  },
+  {
+    "code": "46511",
+    "industry": "Wholesale of computer hardware and peripheral equipment"
+  },
+  {
+    "code": "46551",
+    "industry": "Wholesale of marine equipment and accessories"
+  },
+  {
+    "code": "46552",
+    "industry": "Wholesale of aircraft equipment and supplies"
+  },
+  {
+    "code": "46593",
+    "industry": "Wholesale of commercial food service equipment"
+  },
+  {
+    "code": "46594",
+    "industry": "Wholesale of service establishment equipment and supplies"
+  },
+  {
+    "code": "47413",
+    "industry": "Retail sale of computer games"
+  },
+  {
+    "code": "47414",
+    "industry": "Retail sale of computer and office equipment consumables"
+  },
+  {
+    "code": "47420",
+    "industry": "Retail sale of audio and video equipment"
+  },
+  {
+    "code": "47529",
+    "industry": "Retail sale of hardware, paint and glass n.e.c."
+  },
+  {
+    "code": "47535",
+    "industry": "Retail sale of household electrical appliances and equipment"
+  },
+  {
+    "code": "47630",
+    "industry": "Retail sale of sports apparel and equipment"
+  },
+  {
+    "code": "47712",
+    "industry": "Retail sale of children and infants\u2019 clothing"
+  },
+  {
+    "code": "47715",
+    "industry": "Retail sale of sewing and clothing accessories"
+  },
+  {
+    "code": "47802",
+    "industry": "Stalls (including pushcarts) selling other commodities"
+  },
+  {
+    "code": "49232",
+    "industry": "Moving services"
+  },
+  {
+    "code": "56140",
+    "industry": "Stalls selling cooked food and prepared drinks"
+  },
+  {
+    "code": "81300",
+    "industry": "Landscape planting, care and maintenance service activities"
+  },
+  {
+    "code": "82110",
+    "industry": "Office administrative services on a fee or contract basis"
+  },
+  {
+    "code": "87029",
+    "industry": "Other residential care services n.e.c."
+  },
+  {
+    "code": "88912",
+    "industry": "Child/Student care services for school-going children"
+  },
+  {
+    "code": "88913",
+    "industry": "Social services for children and youths"
+  },
+  {
+    "code": "93119",
+    "industry": "Operation of sports facilities n.e.c."
+  },
+  {
+    "code": "93209",
+    "industry": "Other amusement and recreation activities n.e.c."
+  },
+  {
+    "code": "94120",
+    "industry": "Activities of professional membership organisations"
+  },
+  {
+    "code": "94994",
+    "industry": "Student/Alumni bodies and related associations"
+  },
+  {
+    "code": "95210",
+    "industry": "Repair of audio and video equipment"
+  },
+  {
+    "code": "95301",
+    "industry": "Repair and maintenance of motor vehicles"
+  },
+  {
+    "code": "96030",
+    "industry": "Funeral and related activities"
+  },
+  {
+    "code": "96040",
+    "industry": "Wedding and related activities"
+  },
+  {
+    "code": "46219",
+    "industry": "Wholesale of agricultural raw materials and live animals n.e.c. (excluding tropical produce)"
+  },
+  {
+    "code": "56122",
+    "industry": "Food courts, coffee shops and canteens (with mainly food and beverage income)"
+  },
+  {
+    "code": "56123",
+    "industry": "Food kiosks mainly for takeaway and delivery"
+  },
+  {
+    "code": "81211",
+    "industry": "General cleaning services (including cleaning of public areas, offices and factories) except household cleaning and online marketplaces"
+  },
+  {
+    "code": "81299",
+    "industry": "Other cleaning services n.e.c. (excluding online marketplaces)"
+  },
+  {
+    "code": "82999",
+    "industry": "Other business support service activities (e.g. administration of loyalty programmes)"
+  },
+  {
+    "code": "85212",
+    "industry": "Junior colleges and centralised pre-university institutes (post-secondary non-tertiary) including combined secondary schools and post-secondary non-tertiary schools"
+  },
+  {
+    "code": "85213",
+    "industry": "Commercial schools offering general secondary and post-secondary non-tertiary education programmes"
+  },
+  {
+    "code": "88102",
+    "industry": "Social services for persons with disabilities (e.g. day activity centres for people with disabilities)"
+  },
+  {
+    "code": "90001",
+    "industry": "Production of live stage presentations"
+  },
+  {
+    "code": "95299",
+    "industry": "Repair of other personal and household goods n.e.c. (excluding online marketplaces)"
+  },
+  {
+    "code": "01600",
+    "industry": "Agricultural and animal husbandry service activities except veterinary activities"
+  },
+  {
+    "code": "10200",
+    "industry": "Processing and preserving of seafood"
+  },
+  {
+    "code": "43907",
+    "industry": "Production of Prefabricated Prefinished Volumetric Construction (PPVC) modules"
+  },
+  {
+    "code": "16295",
+    "industry": "Rattan processing"
+  },
+  {
+    "code": "63209",
+    "industry": "Online marketplaces for services n.e.c."
+  },
+  {
+    "code": "63201",
+    "industry": "Online marketplaces for goods (including food)"
+  },
+  {
+    "code": "46610",
+    "industry": "Wholesale of fuels and related products"
+  },
+  {
+    "code": "47101",
+    "industry": "Supermarkets and Hypermarkets"
+  },
+  {
+    "code": "47102",
+    "industry": "Mini-marts, convenience stores and provision shops"
+  },
+  {
+    "code": "47103",
+    "industry": "Department stores"
+  },
+  {
+    "code": "47109",
+    "industry": "Retail sale in other non-specialised stores n.e.c."
+  },
+  {
+    "code": "49215",
+    "industry": "Rental and leasing of cars with driver (excluding street-hail and ride-hail service providers)"
+  },
+  {
+    "code": "49233",
+    "industry": "Rental and leasing of freight land transport vehicle (e.g. lorries and trucks) with driver"
+  },
+  {
+    "code": "56200",
+    "industry": "Food caterers"
+  },
+  {
+    "code": "63202",
+    "industry": "Online marketplaces for health services"
+  },
+  {
+    "code": "63203",
+    "industry": "Online marketplaces for education services"
+  },
+  {
+    "code": "63204",
+    "industry": "Online marketplaces for travel services"
+  },
+  {
+    "code": "63205",
+    "industry": "Online marketplaces for real estate services"
+  },
+  {
+    "code": "62013",
+    "industry": "Development of software for cybersecurity"
+  },
+  {
+    "code": "66126",
+    "industry": "Money-changing services"
+  },
+  {
+    "code": "66307",
+    "industry": "Private debt funds"
+  },
+  {
+    "code": "69101",
+    "industry": "Legal activities (excluding online marketplaces)"
+  },
+  {
+    "code": "74200",
+    "industry": "Photographic activities"
+  },
+  {
+    "code": "69102",
+    "industry": "Arbitration and mediation services (excluding online marketplaces)"
+  },
+  {
+    "code": "77102",
+    "industry": "Renting and leasing of bicycles and inline/roller skates"
+  },
+  {
+    "code": "79200",
+    "industry": "Timesharing service activities"
+  },
+  {
+    "code": "80200",
+    "industry": "Detective and investigation activities"
+  },
+  {
+    "code": "80100",
+    "industry": "Private security activities"
+  },
+  {
+    "code": "85230",
+    "industry": "International and foreign system schools"
+  },
+  {
+    "code": "85240",
+    "industry": "Schools for special needs"
+  },
+  {
+    "code": "85250",
+    "industry": "Specialised education schools"
+  },
+  {
+    "code": "85403",
+    "industry": "Training courses for food and beverage, retail and accommodation, tour operators, travel agencies & travel-related reservation services"
+  },
+  {
+    "code": "85409",
+    "industry": "Training courses n.e.c."
+  },
+  {
+    "code": "85407",
+    "industry": "Training courses for sports and games"
+  },
+  {
+    "code": "85408",
+    "industry": "Training courses for music, dancing, art, speech and drama"
+  },
+  {
+    "code": "85401",
+    "industry": "Training courses for construction, real estate, security and investigation services, cleaning, landscaping, waste management and pest management"
+  },
+  {
+    "code": "85402",
+    "industry": "Training courses for healthcare, education, community and social services"
+  },
+  {
+    "code": "85404",
+    "industry": "Training courses for manufacturing"
+  },
+  {
+    "code": "85405",
+    "industry": "Training courses for information and communications, finance and professional services"
+  },
+  {
+    "code": "85406",
+    "industry": "Training courses for wholesale trade, logistics and transport"
+  },
+  {
+    "code": "88920",
+    "industry": "Community development councils and grassroots organisations"
+  },
+  {
+    "code": "16293",
+    "industry": "Manufacture of wooden containers"
+  },
+  {
+    "code": "16294",
+    "industry": "Manufacture of attap and attap products"
+  },
+  {
+    "code": "21013",
+    "industry": "Manufacture of pharmaceutical products for veterinary use"
+  },
+  {
+    "code": "28193",
+    "industry": "Manufacture and repair of solar modules and panels"
+  },
+  {
+    "code": "28195",
+    "industry": "Manufacture and repair of packaging machinery"
+  },
+  {
+    "code": "42103",
+    "industry": "Bridge, tunnel, viaduct and expressway construction"
+  },
+  {
+    "code": "43220",
+    "industry": "Installation of plumbing, heating (non-electric) and air-conditioning systems"
+  },
+  {
+    "code": "50022",
+    "industry": "Operators and charterers of barges, tugboats and bumboats (freight)"
+  },
+  {
+    "code": "52291",
+    "industry": "Cargo surveying services"
+  },
+  {
+    "code": "52242",
+    "industry": "Crane services for all industries except construction"
+  },
+  {
+    "code": "68209",
+    "industry": "Real estate activities on a fee or commission basis n.e.c. (excluding online marketplaces)"
+  },
+  {
+    "code": "69201",
+    "industry": "Accounting and auditing services (excluding online marketplaces)"
+  },
+  {
+    "code": "74903",
+    "industry": "Agrotechnology consultancy services"
+  },
+  {
+    "code": "74904",
+    "industry": "Carbon consultancy services"
+  },
+  {
+    "code": "74905",
+    "industry": "Agents for artistes, athletes, models and other performers"
+  },
+  {
+    "code": "81212",
+    "industry": "Domestic/Household cleaning services (excluding online marketplaces)"
+  },
+  {
+    "code": "28192",
+    "industry": "Manufacture and repair of separation/mixing equipment (e.g. filters, separators, mixers)"
+  },
+  {
+    "code": "01111",
+    "industry": "Growing of leafy and fruit vegetables"
+  },
+  {
+    "code": "01112",
+    "industry": "Growing of mushrooms"
+  },
+  {
+    "code": "01113",
+    "industry": "Growing of root crops"
+  },
+  {
+    "code": "01119",
+    "industry": "Growing of food crops (non-hydroponics) n.e.c."
+  },
+  {
+    "code": "01120",
+    "industry": "Growing of leafy and fruit vegetables (hydroponics)"
+  },
+  {
+    "code": "01130",
+    "industry": "Growing of fruits"
+  },
+  {
+    "code": "01141",
+    "industry": "Growing of orchids"
+  },
+  {
+    "code": "01142",
+    "industry": "Growing of ornamental plants"
+  },
+  {
+    "code": "01149",
+    "industry": "Growing of nursery products n.e.c."
+  },
+  {
+    "code": "01190",
+    "industry": "Growing of other crops"
+  },
+  {
+    "code": "10750",
+    "industry": "Manufacture of cooked-food preparations (e.g. frozen dinners)"
+  },
+  {
+    "code": "10761",
+    "industry": "Manufacture of instant beverages"
+  },
+  {
+    "code": "10762",
+    "industry": "Processing of coffee seeds"
+  },
+  {
+    "code": "10763",
+    "industry": "Manufacture of coffee powder"
+  },
+  {
+    "code": "10764",
+    "industry": "Manufacture of tea (including processing of tea leaves)"
+  },
+  {
+    "code": "10765",
+    "industry": "Manufacture of non-dairy creamer"
+  },
+  {
+    "code": "10792",
+    "industry": "Manufacture of soya bean products except soya bean sauce and soya bean"
+  },
+  {
+    "code": "10800",
+    "industry": "Manufacture of prepared animal feeds (including additives for animal feed)"
+  },
+  {
+    "code": "11010",
+    "industry": "Distilling, rectifying and blending of spirits; ethyl alcohol production from"
+  },
+  {
+    "code": "11020",
+    "industry": "Manufacture of wines"
+  },
+  {
+    "code": "11030",
+    "industry": "Manufacture of malt liquors and malt (e.g. beer and stout)"
+  },
+  {
+    "code": "11042",
+    "industry": "Manufacture of cordials, syrups and composite concentrates for beverages"
+  },
+  {
+    "code": "11043",
+    "industry": "Manufacture of ice except dry ice"
+  },
+  {
+    "code": "18122",
+    "industry": "Colour separation"
+  },
+  {
+    "code": "18114",
+    "industry": "Printing of continuous and fan-fold forms"
+  },
+  {
+    "code": "18115",
+    "industry": "Silk screen printing (including metal printing)"
+  },
+  {
+    "code": "18119",
+    "industry": "Printing n.e.c."
+  },
+  {
+    "code": "18121",
+    "industry": "Bookbinding (e.g. book packaging)"
+  },
+  {
+    "code": "18129",
+    "industry": "Service activities related to printing n.e.c. (including plate-making)"
+  },
+  {
+    "code": "19100",
+    "industry": "Manufacture of coke oven products"
+  },
+  {
+    "code": "19201",
+    "industry": "Petroleum refineries"
+  },
+  {
+    "code": "22217",
+    "industry": "Manufacture of PVC files, holders and albums"
+  },
+  {
+    "code": "22218",
+    "industry": "Manufacture of plastic cable ties"
+  },
+  {
+    "code": "22219",
+    "industry": "Manufacture of plastic products n.e.c. (except plastic footwear and toys)"
+  },
+  {
+    "code": "22220",
+    "industry": "Plastic product services"
+  },
+  {
+    "code": "23100",
+    "industry": "Manufacture of glass and glass products (including yarn of glass fibres)"
+  },
+  {
+    "code": "23911",
+    "industry": "Manufacture of bricks"
+  },
+  {
+    "code": "23919",
+    "industry": "Manufacture of clay products n.e.c."
+  },
+  {
+    "code": "23931",
+    "industry": "Manufacture of plumbing fixtures and fittings of vitreous china, china and"
+  },
+  {
+    "code": "23939",
+    "industry": "Manufacture of other porcelain and ceramic products n.e.c."
+  },
+  {
+    "code": "23940",
+    "industry": "Manufacture of cement, lime and plaster"
+  },
+  {
+    "code": "23951",
+    "industry": "Manufacture of ready-mix concrete"
+  },
+  {
+    "code": "23991",
+    "industry": "Manufacture of asbestos products except asbestos paper"
+  },
+  {
+    "code": "23992",
+    "industry": "Manufacture of fibreglass and fibreglass products"
+  },
+  {
+    "code": "23995",
+    "industry": "Manufacture of asphalt premix"
+  },
+  {
+    "code": "24101",
+    "industry": "Iron and steel rolling mills"
+  },
+  {
+    "code": "24102",
+    "industry": "Manufacture of ferrous metal alloys"
+  },
+  {
+    "code": "26113",
+    "industry": "Assembly and testing of semiconductors"
+  },
+  {
+    "code": "26122",
+    "industry": "Manufacture of printed circuit boards without electronic parts"
+  },
+  {
+    "code": "26123",
+    "industry": "Manufacture of printed circuit boards with electronic parts"
+  },
+  {
+    "code": "26124",
+    "industry": "Manufacture of piezo-electric devices (e.g. quartz crystals, quartz crystal filters, delay lines)"
+  },
+  {
+    "code": "26126",
+    "industry": "Manufacture of electronic connectors"
+  },
+  {
+    "code": "26114",
+    "industry": "Manufacture of solar wafers"
+  },
+  {
+    "code": "26115",
+    "industry": "Manufacture of solar cells"
+  },
+  {
+    "code": "26119",
+    "industry": "Manufacture of semiconductor devices n.e.c."
+  },
+  {
+    "code": "26121",
+    "industry": "Manufacture of capacitors"
+  },
+  {
+    "code": "28172",
+    "industry": "Repair and maintenance of office machinery and equipment"
+  },
+  {
+    "code": "28182",
+    "industry": "Manufacture and repair of service robots"
+  },
+  {
+    "code": "28189",
+    "industry": "Manufacture and repair of robots n.e.c."
+  },
+  {
+    "code": "28191",
+    "industry": "Manufacture and repair of refrigerating, air-conditioning and ventilating"
+  },
+  {
+    "code": "28194",
+    "industry": "Manufacture and repair of welding and soldering equipment (including arc welding electrodes)"
+  },
+  {
+    "code": "28199",
+    "industry": "Manufacture and repair of other general purpose machinery and"
+  },
+  {
+    "code": "28210",
+    "industry": "Manufacture and repair of agricultural and forestry machinery"
+  },
+  {
+    "code": "28221",
+    "industry": "Manufacture and repair of machinery and machine-tools - metal cutting"
+  },
+  {
+    "code": "28222",
+    "industry": "Manufacture and repair of machinery and machine-tools - metal forming"
+  },
+  {
+    "code": "28223",
+    "industry": "Manufacture of dies, moulds, tools, jigs and fixtures"
+  },
+  {
+    "code": "32400",
+    "industry": "Manufacture of games and toys"
+  },
+  {
+    "code": "32501",
+    "industry": "Manufacture of medical research and clinical diagnostic instruments and"
+  },
+  {
+    "code": "32504",
+    "industry": "Manufacture of ophthalmic goods (e.g. spectacles, contact lenses and parts)"
+  },
+  {
+    "code": "32901",
+    "industry": "Manufacture of signs and advertising displays (including neon-lighting)"
+  },
+  {
+    "code": "32509",
+    "industry": "Manufacture of medical and dental tools, instruments and supplies n.e.c."
+  },
+  {
+    "code": "46211",
+    "industry": "Wholesale of cut flowers and plants"
+  },
+  {
+    "code": "46212",
+    "industry": "Wholesale of aquarium fishes (including food and accessories)"
+  },
+  {
+    "code": "46100",
+    "industry": "Wholesale on a fee or commission basis (excluding online marketplaces)"
+  },
+  {
+    "code": "46213",
+    "industry": "Wholesale of pet birds and animals (including food and accessories)"
+  },
+  {
+    "code": "46221",
+    "industry": "Wholesale of rubber (including rubber brokers)"
+  },
+  {
+    "code": "46222",
+    "industry": "Wholesale of pepper and other spices"
+  },
+  {
+    "code": "46223",
+    "industry": "Wholesale of coffee, cocoa and tea"
+  },
+  {
+    "code": "46224",
+    "industry": "Wholesale of coconut"
+  },
+  {
+    "code": "46225",
+    "industry": "Wholesale of palm oil"
+  },
+  {
+    "code": "46229",
+    "industry": "Wholesale of tropical produce n.e.c."
+  },
+  {
+    "code": "46301",
+    "industry": "Wholesale of fruits and vegetables (including fresh and frozen)"
+  },
+  {
+    "code": "46542",
+    "industry": "Wholesale of construction equipment (e.g. concrete mixer)"
+  },
+  {
+    "code": "46543",
+    "industry": "Wholesale of lifts, escalators and industrial and office air-conditioning"
+  },
+  {
+    "code": "46544",
+    "industry": "Wholesale of electrical and wiring accessories"
+  },
+  {
+    "code": "46549",
+    "industry": "Wholesale of industrial, construction and related machinery and"
+  },
+  {
+    "code": "46559",
+    "industry": "Wholesale of transport equipment except motor vehicles and motorcycles"
+  },
+  {
+    "code": "46561",
+    "industry": "Wholesale of motor vehicles except motorcycles and scooters"
+  },
+  {
+    "code": "46562",
+    "industry": "Wholesale of motorcycles and scooters"
+  },
+  {
+    "code": "46563",
+    "industry": "Wholesale of parts and accessories for vehicles"
+  },
+  {
+    "code": "46591",
+    "industry": "Wholesale of office machines and equipment (including accessories)"
+  },
+  {
+    "code": "47537",
+    "industry": "Retail sale of security and safety equipment"
+  },
+  {
+    "code": "47536",
+    "industry": "Retail sale of musical instruments and scores"
+  },
+  {
+    "code": "47731",
+    "industry": "Retail sale of jewellery made from precious metals and stones"
+  },
+  {
+    "code": "47539",
+    "industry": "Retail sale of electrical household appliances, furniture, lighting equipment"
+  },
+  {
+    "code": "47610",
+    "industry": "Retail sale of books, newspapers and stationery (including newsvendors)"
+  },
+  {
+    "code": "47620",
+    "industry": "Retail sale of music and video recordings (e.g. DVDs, Blu-ray discs)"
+  },
+  {
+    "code": "47640",
+    "industry": "Retail sale of games and toys"
+  },
+  {
+    "code": "47711",
+    "industry": "Retail sale of clothing for adults"
+  },
+  {
+    "code": "47713",
+    "industry": "Retail sale of footwear"
+  },
+  {
+    "code": "47714",
+    "industry": "Retail sale of bags, luggage and travel accessories"
+  },
+  {
+    "code": "47719",
+    "industry": "Retail sale of clothing, footwear and leather articles n.e.c."
+  },
+  {
+    "code": "52212",
+    "industry": "Motor vehicle towing services"
+  },
+  {
+    "code": "52103",
+    "industry": "Storage for dangerous goods"
+  },
+  {
+    "code": "52211",
+    "industry": "Carpark management and operation services"
+  },
+  {
+    "code": "52219",
+    "industry": "Supporting services to land transport n.e.c."
+  },
+  {
+    "code": "52221",
+    "industry": "Representative offices of foreign shipping lines"
+  },
+  {
+    "code": "52222",
+    "industry": "Shipping agencies (freight)"
+  },
+  {
+    "code": "52223",
+    "industry": "Port operators"
+  },
+  {
+    "code": "52224",
+    "industry": "Lighterage services"
+  },
+  {
+    "code": "52225",
+    "industry": "Salvaging of distressed vessels and cargos"
+  },
+  {
+    "code": "52226",
+    "industry": "Ship management services"
+  },
+  {
+    "code": "52227",
+    "industry": "Ship brokering services"
+  },
+  {
+    "code": "62012",
+    "industry": "Development of computer games"
+  },
+  {
+    "code": "62011",
+    "industry": "Development of software and applications (except games and cybersecurity)"
+  },
+  {
+    "code": "63112",
+    "industry": "Hosting services by non-data centres"
+  },
+  {
+    "code": "64140",
+    "industry": "Merchant banks"
+  },
+  {
+    "code": "62021",
+    "industry": "Information technology consultancy (except cybersecurity)"
+  },
+  {
+    "code": "62022",
+    "industry": "Information technology cybersecurity consultancy"
+  },
+  {
+    "code": "62023",
+    "industry": "Computer facilities management activities"
+  },
+  {
+    "code": "63901",
+    "industry": "News agency activities"
+  },
+  {
+    "code": "63909",
+    "industry": "Other information service activities n.e.c."
+  },
+  {
+    "code": "64110",
+    "industry": "Central bank"
+  },
+  {
+    "code": "64120",
+    "industry": "Full banks"
+  },
+  {
+    "code": "66309",
+    "industry": "Fund management activities n.e.c."
+  },
+  {
+    "code": "68101",
+    "industry": "Real estate developers"
+  },
+  {
+    "code": "68103",
+    "industry": "Letting of self-owned or leased real estate property except food courts, coffee shops and canteens (e.g. office/exhibition space, shopping mall, self-storage facilities)"
+  },
+  {
+    "code": "68104",
+    "industry": "Letting and operating of self-owned or leased food courts, coffee shops and canteens (with mainly rental income)"
+  },
+  {
+    "code": "68102",
+    "industry": "Operating of serviced apartments"
+  },
+  {
+    "code": "68105",
+    "industry": "Collective portfolio investment funds with rental income"
+  },
+  {
+    "code": "77220",
+    "industry": "Renting of VCDs and DVDs"
+  },
+  {
+    "code": "77291",
+    "industry": "Renting and leasing of furniture, utensils and electronic equipment for"
+  },
+  {
+    "code": "77101",
+    "industry": "Renting and leasing of private cars without driver (excluding online marketplaces)"
+  },
+  {
+    "code": "77109",
+    "industry": "Renting and leasing of land transport equipment (except cars) without driver n.e.c. (excluding online marketplaces)"
+  },
+  {
+    "code": "77299",
+    "industry": "Renting and leasing of other personal and household goods n.e.c. (excluding online marketplaces)"
+  },
+  {
+    "code": "77399",
+    "industry": "Renting of other machinery, equipment and tangible goods n.e.c. (excluding online marketplaces)"
+  },
+  {
+    "code": "78103",
+    "industry": "Domestic worker employment placement agencies (excluding online marketplaces)"
+  },
+  {
+    "code": "77292",
+    "industry": "Renting of attire (e.g. costumes)"
+  },
+  {
+    "code": "78104",
+    "industry": "Employment agencies (excluding domestic worker employment placement agencies and online marketplaces)"
+  },
+  {
+    "code": "77330",
+    "industry": "Renting of construction and civil engineering machinery and equipment"
+  },
+  {
+    "code": "77341",
+    "industry": "Renting of computers and peripheral equipment"
+  },
+  {
+    "code": "77342",
+    "industry": "Renting of office machinery and equipment"
+  },
+  {
+    "code": "77391",
+    "industry": "Renting and leasing of professional radio and television sets and sound"
+  },
+  {
+    "code": "77392",
+    "industry": "Renting of industrial machinery and equipment"
+  },
+  {
+    "code": "78101",
+    "industry": "IT manpower contracting services"
+  },
+  {
+    "code": "78102",
+    "industry": "Manpower contracting services (excluding IT manpower)"
+  },
+  {
+    "code": "85301",
+    "industry": "Polytechnics"
+  },
+  {
+    "code": "85302",
+    "industry": "Universities"
+  },
+  {
+    "code": "85303",
+    "industry": "Teachers' training institute"
+  },
+  {
+    "code": "85304",
+    "industry": "Commercial schools offering higher education programmes"
+  },
+  {
+    "code": "85501",
+    "industry": "Student recruitment agencies"
+  },
+  {
+    "code": "86101",
+    "industry": "Acute hospitals"
+  },
+  {
+    "code": "94200",
+    "industry": "Activities of trade unions"
+  },
+  {
+    "code": "94911",
+    "industry": "Churches"
+  },
+  {
+    "code": "94912",
+    "industry": "Mosques"
+  },
+  {
+    "code": "94913",
+    "industry": "Buddhist/Taoist temples"
+  },
+  {
+    "code": "94914",
+    "industry": "Hindu/Sikh temples"
+  },
+  {
+    "code": "94919",
+    "industry": "Activities of religious organisations n.e.c."
+  },
+  {
+    "code": "94920",
+    "industry": "Activities of political organisations"
+  },
+  {
+    "code": "94991",
+    "industry": "Philanthropic trusts, foundations and related activities"
+  },
+  {
+    "code": "59132",
+    "industry": "Distribution of television programmes (e.g. dramas, variety shows and documentaries)"
+  },
+  {
+    "code": "63120",
+    "industry": "Internet search engines"
+  },
+  {
+    "code": "59113",
+    "industry": "Production of dramas, variety shows and documentaries"
+  },
+  {
+    "code": "60200",
+    "industry": "Television programming and broadcasting"
+  },
+  {
+    "code": "61011",
+    "industry": "Wired telecommunications network operation"
+  },
+  {
+    "code": "61099",
+    "industry": "Other telecommunications activities n.e.c. (e.g. provision of VoIP"
+  },
+  {
+    "code": "62090",
+    "industry": "Other information technology and computer service activities"
+  },
+  {
+    "code": "63119",
+    "industry": "Data analytics, processing and related activities n.e.c."
+  },
+  {
+    "code": "64300",
+    "industry": "Trusts, funds and similar financial entities"
+  },
+  {
+    "code": "66191",
+    "industry": "Trustee, fiduciary and custody services firms"
+  },
+  {
+    "code": "66194",
+    "industry": "Activities auxiliary to fund management activities"
+  },
+  {
+    "code": "66199",
+    "industry": "Other activities auxiliary to financial service activities n.e.c."
+  },
+  {
+    "code": "66303",
+    "industry": "Property fund management"
+  },
+  {
+    "code": "66306",
+    "industry": "Single/Multiple family offices activities"
+  },
+  {
+    "code": "68106",
+    "industry": "Management of self-owned strata titled property"
+  },
+  {
+    "code": "71119",
+    "industry": "Other surveying services n.e.c."
+  },
+  {
+    "code": "71124",
+    "industry": "Environmental engineering design and consultancy services"
+  },
+  {
+    "code": "71200",
+    "industry": "Technical testing and analysis services"
+  },
+  {
+    "code": "77210",
+    "industry": "Renting and leasing of recreational and sports goods"
+  },
+  {
+    "code": "77310",
+    "industry": "Renting of water transport equipment without operator"
+  },
+  {
+    "code": "77320",
+    "industry": "Renting of air transport equipment without operator"
+  },
+  {
+    "code": "77400",
+    "industry": "Leasing of non-financial intangible assets"
+  }
+]

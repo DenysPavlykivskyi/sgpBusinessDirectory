@@ -6,7 +6,12 @@ import AdSlot from '../components/AdSlot.astro';
 import companies from '../data/companies.json';
 
 // Get search parameters
-const { q, name, type, status } = Astro.url.searchParams;
+const searchParams = Astro.url.searchParams;
+const q = searchParams.get('q') || '';
+const name = searchParams.get('name') || '';
+const type = searchParams.get('type') || '';
+const status = searchParams.get('status') || '';
+const currentPage = parseInt(searchParams.get('page')) || 1;
 
 // Filter companies based on search parameters
 let filteredCompanies = [...companies];
@@ -35,18 +40,21 @@ if (type) {
 
 if (status) {
   filteredCompanies = filteredCompanies.filter(company => 
-    company.status === status
+    company.status.toLowerCase() === status.toLowerCase()
   );
 }
 
 // Pagination settings
 const pageSize = 12;
-const currentPage = 1;
 const totalCompanies = filteredCompanies.length;
 const totalPages = Math.ceil(totalCompanies / pageSize);
 
+// Calculate start and end index for current page
+const startIndex = (currentPage - 1) * pageSize;
+const endIndex = Math.min(startIndex + pageSize, totalCompanies);
+
 // Get companies for current page
-const paginatedCompanies = filteredCompanies.slice(0, pageSize);
+const paginatedCompanies = filteredCompanies.slice(startIndex, endIndex);
 
 // Search query description for title
 let searchDescription = '';
@@ -60,6 +68,14 @@ else if (name || type || status) {
 } else {
   searchDescription = 'Search Companies';
 }
+
+// Create base URL for pagination
+const paginationParams = new URLSearchParams();
+if (q) paginationParams.set('q', q);
+if (name) paginationParams.set('name', name);
+if (type) paginationParams.set('type', type);
+if (status) paginationParams.set('status', status);
+const paginationBaseUrl = `/search?${paginationParams.toString()}&page=`;
 ---
 
 <Layout
@@ -186,13 +202,14 @@ else if (name || type || status) {
             {paginatedCompanies.map(company => (
               <CompanyCard company={company} />
             ))}
+            console.log(paginatedCompanies);
           </div>
           
           <!-- Pagination -->
           <Pagination 
             currentPage={currentPage} 
             totalPages={totalPages} 
-            basePath={`/search?${Astro.url.searchParams.toString()}&page=`}
+            basePath={paginationBaseUrl}
           />
         </>
       ) : (

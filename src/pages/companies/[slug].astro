@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import companies from '../../data/companies.json';
+import activities from '../../data/activities.json';
 
 // Generate static paths for all companies
 export async function getStaticPaths() {
@@ -294,7 +295,9 @@ const initials = getInitials(company.name);
                   
                   <div>
                     <dt class="text-sm font-medium text-gray-500">Principal Activity</dt>
-                    <dd class="mt-1 text-sm text-blue-500"><a href="#">{company.primaryIndustry?.description !== 'Not available' ? company.primaryIndustry?.description : 'Not available'}</a></dd>
+                    <dd class="mt-1 text-sm text-blue-500">
+                      <a href="#">{activities[company.primaryIndustry?.code] || company.primaryIndustry?.description || 'Not available'}</a>
+                    </dd>
                   </div>
                 </dl>
               </div>
@@ -310,7 +313,9 @@ const initials = getInitials(company.name);
                     
                     <div>
                       <dt class="text-sm font-medium text-gray-500">Secondary Activity</dt>
-                      <dd class="mt-1 text-sm text-blue-500">{company.secondaryIndustry?.description !== 'Not available' ? company.secondaryIndustry?.description : 'Not available'}</dd>
+                      <dd class="mt-1 text-sm text-blue-500">
+                        {activities[company.secondaryIndustry?.code] || company.secondaryIndustry?.description || 'Not available'}
+                      </dd>
                     </div>
                   </dl>
                 </div>
