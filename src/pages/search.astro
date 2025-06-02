@@ -7,6 +7,11 @@ import companies from '../data/companies.json';
 
 // Get search parameters
 const searchParams = Astro.url.searchParams;
+
+// At the top of your frontmatter
+console.log('Astro.url:', Astro.url);
+console.log('Search params:', Astro.url.searchParams.toString());
+
 const q = searchParams.get('q') || '';
 const name = searchParams.get('name') || '';
 const type = searchParams.get('type') || '';
@@ -96,7 +101,7 @@ const paginationBaseUrl = `/search?${paginationParams.toString()}&page=`;
       <!-- Search form -->
       <div class="bg-white shadow-sm rounded-lg overflow-hidden mb-8">
         <div class="p-6">
-          <form action="/search" method="get" class="space-y-6">
+          <form action="/search" method="get" class="space-y-6" data-astro-reload>
             <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
               <div>
                 <label for="q" class="block text-sm font-medium text-gray-700">Keywords</label>
@@ -229,3 +234,10 @@ const paginationBaseUrl = `/search?${paginationParams.toString()}&page=`;
     </div>
   </section>
 </Layout>
+
+<script>
+  // Debug code - can be removed after testing
+  if (typeof window !== 'undefined') {
+    console.log('Current URL search params:', window.location.search);
+  }
+</script>

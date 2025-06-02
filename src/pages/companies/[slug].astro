@@ -286,6 +286,7 @@ const initials = getInitials(company.name);
             </div>
           </div>
           
+
           <!-- Industry Information -->
           <div id="industry" class="bg-white shadow-sm rounded-lg p-6 mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-4">Company Industry</h2>
@@ -342,7 +343,17 @@ const initials = getInitials(company.name);
             </div>
           </div>
           
-          
+          <!-- PayNow Number -->
+          <div id="contact" class="bg-white shadow-sm rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">PayNow</h2>
+            
+            <div class="grid grid-cols-1 gap-y-6">
+              <div>
+                <h3 class="text-lg font-medium text-gray-900">{company.uen}</h3>
+              </div>
+            </div>
+          </div>
+
           <!-- Related Companies -->
           {relatedCompanies.length > 0 && (
             <div id="similar-activity" class="bg-white shadow-sm rounded-lg p-6 mb-8">
