@@ -137,36 +137,39 @@ const initials = getInitials(company.name);
   <section class="py-12 bg-gray-50">
     <!-- <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> -->
       <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">       
-        <!-- <div class="space-y-8"> -->
-        <div class="bg-white shadow-sm rounded-lg p-6 sticky">
-          <ul class="divide-y divide-gray-200">
-            {sections.map(section => {
-              // Check if the section should be visible
-              const shouldShowSection = 
-                (section.id === 'overview') || // Always show overview
-                (section.id === 'profile') || // Always show profile
-                (section.id === 'name-history' && company.formerNames?.length > 0) ||
-                (section.id === 'contact') || // Always show contact
-                (section.id === 'industry') || // Always show industry
-                (section.id === 'paynow') || // Always show paynow
-                (section.id === 'media' && /* condition for media */ false) || // Example for media
-                (section.id === 'other-info' && /* condition for other-info */ false) ||
-                (section.id === 'similar-activity' && (relatedCompanies.length > 0 || relatedSecondaryCompanies.length > 0)) ||
-                (section.id === 'similar-names' && SimilarlyNamedCompanies.length > 0);
-          
-              return shouldShowSection ? (
-                <li class="py-4">
-                  <a href={`#${section.id}`}>
-                    <p class="text-sm font-medium text-gray-900 group-hover:text-primary-700">
-                      {section.icon} {section.name}
-                    </p>
-                  </a>
-                </li>
-              ) : null;
-            })}
-          </ul>
+        <div class="lg:col-span-1">
+          <!-- <div class="space-y-8"> -->
+          <div class="bg-white shadow-sm rounded-lg p-6 sticky top-20 h-fit">
+            <ul class="divide-y divide-gray-200">
+              {sections.map(section => {
+                // Check if the section should be visible
+                const shouldShowSection = 
+                  (section.id === 'overview') || // Always show overview
+                  (section.id === 'profile') || // Always show profile
+                  (section.id === 'name-history' && company.formerNames?.length > 0) ||
+                  (section.id === 'contact') || // Always show contact
+                  (section.id === 'industry') || // Always show industry
+                  (section.id === 'paynow') || // Always show paynow
+                  (section.id === 'media' && /* condition for media */ false) || // Example for media
+                  (section.id === 'other-info' && /* condition for other-info */ false) ||
+                  (section.id === 'similar-activity' && (relatedCompanies.length > 0 || relatedSecondaryCompanies.length > 0)) ||
+                  (section.id === 'similar-names' && SimilarlyNamedCompanies.length > 0);
+            
+                return shouldShowSection ? (
+                  <li class="py-4 px-2 rounded hover:bg-gray-100 transition-colors duration-200 nav-item" 
+                      data-section={section.id}>
+                    <a href={`#${section.id}`} class="block">
+                      <p class="text-sm font-medium">
+                        {section.icon} {section.name}
+                      </p>
+                    </a>
+                  </li>
+                ) : null;
+              })}
+            </ul>
+          </div>
+          <!-- </div> -->
         </div>
-        <!-- </div> -->
         <!-- Main content -->
         <div class="lg:col-span-4">
           <!-- Ad slot at the top of main content -->
@@ -439,27 +442,59 @@ const initials = getInitials(company.name);
   <section>
 </Layout>
 
-<script define:vars={{ companyName: company.name, companyAddress: company.address }}>
-// Structured data for SEO
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": companyName,
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": companyAddress
-  }
-};
-
-// Add structured data to the page
-const script = document.createElement('script');
-script.type = 'application/ld+json';
-script.text = JSON.stringify(structuredData);
-document.head.appendChild(script);
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('.nav-item');
+    
+    // Function to set active item
+    function setActiveItem(clickedItem) {
+      // Remove active class from all items
+      navItems.forEach(item => {
+        item.classList.remove('bg-blue-100', 'text-blue-700');
+      });
+      
+      // Add active class to clicked item
+      clickedItem.classList.add('bg-blue-100', 'text-blue-700');
+      
+      // Store in sessionStorage to persist across page reloads
+      sessionStorage.setItem('activeSection', clickedItem.dataset.section);
+    }
+    
+    // Set initial active item
+    const savedSection = sessionStorage.getItem('activeSection');
+    if (savedSection) {
+      const savedItem = document.querySelector(`[data-section="${savedSection}"]`);
+      if (savedItem) setActiveItem(savedItem);
+    } else {
+      // Default to overview section
+      const overviewItem = document.querySelector('[data-section="overview"]');
+      if (overviewItem) setActiveItem(overviewItem);
+    }
+    
+    // Add click handlers - modified to prevent default anchor behavior
+    navItems.forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+        const targetId = item.dataset.section;
+        const targetSection = document.getElementById(targetId);
+        
+        if (targetSection) {
+          // Smooth scroll to section
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+          
+          // Set active item
+          setActiveItem(item);
+          
+          // Update URL hash without jumping
+          history.pushState(null, null, `#${targetId}`);
+        }
+      });
+    });
+  });
 </script>
 
 <style>
-      .company-logo {
+    .company-logo {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -470,5 +505,18 @@ document.head.appendChild(script);
     justify-content: center;
     font-size: 1.5rem;
     font-weight: 600;
+  }
+  
+  .nav-item {
+    cursor: pointer;
+  }
+  
+  .nav-item:hover:not(.bg-blue-100) {
+    background-color: rgb(243 244 246); /* gray-100 */
+  }
+
+  li {
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
   }
 </style>
