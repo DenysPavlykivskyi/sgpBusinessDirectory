@@ -1,7 +1,7 @@
 import 'html-escaper';
 import 'neotraverse/modern';
 import 'kleur/colors';
-import '../chunks/astro/server_CZhOI031.mjs';
+import '../chunks/astro/server_DiIDCIrw.mjs';
 import 'clsx';
 import { c as companies } from '../chunks/companies_CP-KSTNV.mjs';
 import { r as registrationTypes } from '../chunks/registrationTypes_2eUyI_p7.mjs';

@@ -1,15 +1,14 @@
 /* empty css                                    */
-import { c as createAstro, a as createComponent, d as renderComponent, r as renderTemplate, m as maybeRenderHead, F as Fragment } from '../../chunks/astro/server_CZhOI031.mjs';
+import { c as createAstro, a as createComponent, d as renderComponent, r as renderTemplate, m as maybeRenderHead, F as Fragment } from '../../chunks/astro/server_DiIDCIrw.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_AdaGzw4y.mjs';
-import { $ as $$CompanyCard } from '../../chunks/CompanyCard_CYxKHnGS.mjs';
-import { $ as $$Pagination } from '../../chunks/Pagination_C66Y4Q0J.mjs';
-import { $ as $$SearchForm } from '../../chunks/SearchForm_DEyzeKoY.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_B65e0YHv.mjs';
+import { $ as $$CompanyCard } from '../../chunks/CompanyCard_fSMI_DPB.mjs';
+import { $ as $$Pagination } from '../../chunks/Pagination_BV_PfW0T.mjs';
+import { $ as $$SearchForm } from '../../chunks/SearchForm_BZfOJJpV.mjs';
 import { c as companies } from '../../chunks/companies_CP-KSTNV.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Astro = createAstro("https://sg-business.com");
-const prerender = false;
 function getStaticPaths() {
   return [
     { params: { query: [] } }
@@ -78,7 +77,6 @@ const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   default: $$,
   file: $$file,
   getStaticPaths,
-  prerender,
   url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 

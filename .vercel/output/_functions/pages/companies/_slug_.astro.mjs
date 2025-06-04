@@ -1,8 +1,8 @@
 /* empty css                                    */
-import { c as createAstro, a as createComponent, d as renderComponent, r as renderTemplate, b as addAttribute, m as maybeRenderHead } from '../../chunks/astro/server_CZhOI031.mjs';
+import { c as createAstro, a as createComponent, d as renderComponent, r as renderTemplate, b as addAttribute, m as maybeRenderHead } from '../../chunks/astro/server_DiIDCIrw.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_AdaGzw4y.mjs';
-import { $ as $$AdSlot } from '../../chunks/AdSlot_resRu42K.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_B65e0YHv.mjs';
+import { $ as $$AdSlot } from '../../chunks/AdSlot_h1-fxkxn.mjs';
 import { c as companies } from '../../chunks/companies_CP-KSTNV.mjs';
 /* empty css                                     */
 export { renderers } from '../../renderers.mjs';

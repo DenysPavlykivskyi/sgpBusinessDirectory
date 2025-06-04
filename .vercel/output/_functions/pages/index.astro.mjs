@@ -1,9 +1,9 @@
 /* empty css                                 */
-import { a as createComponent, d as renderComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute } from '../chunks/astro/server_CZhOI031.mjs';
+import { a as createComponent, d as renderComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute } from '../chunks/astro/server_DiIDCIrw.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../chunks/Layout_AdaGzw4y.mjs';
-import { $ as $$CompanyCard } from '../chunks/CompanyCard_CYxKHnGS.mjs';
-import { $ as $$AdSlot } from '../chunks/AdSlot_resRu42K.mjs';
+import { $ as $$Layout } from '../chunks/Layout_B65e0YHv.mjs';
+import { $ as $$CompanyCard } from '../chunks/CompanyCard_fSMI_DPB.mjs';
+import { $ as $$AdSlot } from '../chunks/AdSlot_h1-fxkxn.mjs';
 import { c as companies } from '../chunks/companies_CP-KSTNV.mjs';
 import { r as registrationTypes } from '../chunks/registrationTypes_2eUyI_p7.mjs';
 export { renderers } from '../renderers.mjs';
