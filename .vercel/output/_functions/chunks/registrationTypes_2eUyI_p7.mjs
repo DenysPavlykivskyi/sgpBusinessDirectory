@@ -1,0 +1,24 @@
+const registrationTypes = [
+	{
+		name: "Sole Proprietorship/ Partnership",
+		slug: "sole-proprietorship-partnership"
+	},
+	{
+		name: "Local Company",
+		slug: "local-company"
+	},
+	{
+		name: "Limited Partnership",
+		slug: "limited-partnership"
+	},
+	{
+		name: "Foreign Company Branch",
+		slug: "foreign-company-branch"
+	},
+	{
+		name: "Limited Liability Partnership",
+		slug: "limited-liability-partnership"
+	}
+];
+
+export { registrationTypes as r };

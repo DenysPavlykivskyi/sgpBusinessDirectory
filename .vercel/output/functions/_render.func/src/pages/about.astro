@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AdSlot from '../components/AdSlot.astro';
+---
+
+<Layout
+  title="About Us - Singapore Business Directory"
+  description="Learn about our mission to provide comprehensive information on businesses registered in Singapore."
+>
+  <section class="bg-white border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <h1 class="text-3xl font-bold text-gray-900">About SGPBusiness.com</h1>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white shadow-sm rounded-lg overflow-hidden">
+        <div class="p-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">It's about getting ahead in this new world</h2>
+          
+          <p class="text-gray-600 mb-6">
+            Singapore’s premier platform for businesses and individuals. We consolidate data from across the web and present it in a clean, organized format. Let us handle the research while you access reliable, up-to-date business directories tailored for Singapore.
+          </p>          
+                    
+          <!-- Ad slot in middle of content -->
+          <AdSlot id="about-mid-ad" position="about-mid" className="my-8" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
