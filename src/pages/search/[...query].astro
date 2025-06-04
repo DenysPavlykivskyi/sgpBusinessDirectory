@@ -1,0 +1,182 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CompanyCard from '../../components/CompanyCard.astro';
+import Pagination from '../../components/Pagination.astro';
+import SearchForm from '../../components/SearchForm.astro';
+import companies from '../../data/companies.json';
+
+export const prerender = false;
+
+interface Company {
+  id: string;
+  uen: string;
+  slug: string;
+  name: string;
+  description: string;
+  type: string;
+  constitution: string;
+  status: string;
+  registrationDate: string;
+  uenIssueDate: string;
+  address: string;
+  postal_code: string;
+  // Add other properties as needed
+}
+
+interface SearchFilters {
+  q: string;
+  name: string;
+  type: string;
+  status: string;
+  page: number;
+}
+
+
+// Ensure this route is server-rendered
+export function getStaticPaths() {
+  // For dynamic routes that should be server-rendered at request time,
+  // you can either remove this function completely or return a fallback
+  return [
+    { params: { query: [] } } // Fallback for /search
+  ];
+}
+
+// Helper function to safely get and decode URL params
+const getSearchParam = (param: string | null): string => {
+  try {
+    return param ? decodeURIComponent(param).trim() : '';
+  } catch {
+    return '';
+  }
+};
+
+// Get current URL and search params
+const url = new URL(Astro.request.url);
+const searchParams = url.searchParams;
+
+// Extract and normalize search parameters
+const searchFilters: SearchFilters = {
+  q: getSearchParam(searchParams.get('q')),
+  name: getSearchParam(searchParams.get('name')),
+  type: getSearchParam(searchParams.get('type')),
+  status: getSearchParam(searchParams.get('status')),
+  page: Math.max(1, parseInt(searchParams.get('page') || '1'))
+};
+
+// Filter companies based on search criteria
+const filteredCompanies: Company[] = companies.filter((company: Company) => {
+  // Convert all search terms to lowercase for case-insensitive comparison
+  const searchQ = searchFilters.q.toLowerCase();
+  const searchName = searchFilters.name.toLowerCase();
+  const searchType = searchFilters.type.toLowerCase();
+  const searchStatus = searchFilters.status.toLowerCase();
+
+  // Convert company data to lowercase
+  const companyName = company.name?.toLowerCase() || '';
+  const companyUen = company.uen?.toLowerCase() || '';
+  const companyAddress = company.address?.toLowerCase() || '';
+  const companyType = company.type?.toLowerCase() || '';
+  const companyStatus = company.status?.toLowerCase() || '';
+
+  // Check if company matches all active filters
+  const matchesQ = !searchFilters.q || 
+    companyName.includes(searchQ) ||
+    companyUen.includes(searchQ) ||
+    companyAddress.includes(searchQ);
+
+  const matchesName = !searchFilters.name || 
+    companyName.includes(searchName);
+
+  const matchesType = !searchFilters.type || 
+    companyType === searchType;
+
+  const matchesStatus = !searchFilters.status || 
+    companyStatus === searchStatus;
+
+  return matchesQ && matchesName && matchesType && matchesStatus;
+});
+
+// Pagination settings
+const pageSize = 12;
+const totalCompanies = filteredCompanies.length;
+const totalPages = Math.ceil(totalCompanies / pageSize);
+const currentPage = Math.min(searchFilters.page, totalPages || 1);
+const startIndex = (currentPage - 1) * pageSize;
+const paginatedCompanies = filteredCompanies.slice(startIndex, startIndex + pageSize);
+
+// Build pagination URL while preserving search params
+const buildPaginationUrl = (): string => {
+  const params = new URLSearchParams();
+  if (searchFilters.q) params.set('q', searchFilters.q);
+  if (searchFilters.name) params.set('name', searchFilters.name);
+  if (searchFilters.type) params.set('type', searchFilters.type);
+  if (searchFilters.status) params.set('status', searchFilters.status);
+  return `/search?${params.toString()}`;
+};
+---
+
+<Layout 
+  title={`Search Results - ${searchFilters.q || searchFilters.name || 'Companies'}`}
+  description={`Search results for companies in Singapore matching your criteria - Page ${currentPage} of ${totalPages}`}
+>
+  <section class="bg-white border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <h1 class="text-3xl font-bold text-gray-900">Search Results</h1>
+      <p class="mt-2 text-lg text-gray-600">
+        {searchFilters.q && `Matching: "${searchFilters.q}"`}
+        {searchFilters.name && `Company name: "${searchFilters.name}"`}
+        {searchFilters.type && ` • Type: ${searchFilters.type}`}
+        {searchFilters.status && ` • Status: ${searchFilters.status}`}
+        {!searchFilters.q && !searchFilters.name && !searchFilters.type && !searchFilters.status && 'Showing all companies'}
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Search Form with current values pre-filled -->
+      <SearchForm 
+        action="/search/[...query]"
+        method="GET" 
+        initialValues={searchFilters}
+        className="bg-white p-6 rounded-lg shadow-sm mb-8"
+      />
+      
+      <!-- Results Summary -->
+      <div class="mb-6 flex justify-between items-center">
+        <h2 class="text-lg font-medium text-gray-900">
+          {totalCompanies > 0 
+            ? `Found ${totalCompanies} companies (page ${currentPage} of ${totalPages})`
+            : 'No companies found matching your criteria'}
+        </h2>
+      </div>
+
+      <!-- Results Grid -->
+      {totalCompanies > 0 ? (
+        <>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {paginatedCompanies.map((company: Company) => (
+              <CompanyCard company={company} />
+            ))}
+          </div>
+          
+          {totalPages > 1 && (
+            <Pagination 
+              currentPage={currentPage}
+              totalPages={totalPages}
+              basePath={buildPaginationUrl()} // Call the function to get the base string
+              className="mt-8"
+            />
+          )}
+        </>
+      ) : (
+        <div class="bg-white p-8 shadow-sm rounded-lg text-center">
+          <h3 class="mt-2 text-lg font-medium text-gray-900">No results found</h3>
+          <p class="mt-1 text-sm text-gray-500">
+            Try adjusting your search criteria or removing some filters
+          </p>
+        </div>
+      )}
+    </div>
+  </section>
+</Layout>

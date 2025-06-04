@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SearchForm from '../../components/SearchForm.astro';
+
+export const prerender = true;
+
+export function getStaticPaths() {
+  return [{ params: {} }];
+}
+---
+
+<Layout 
+  title="Search Singapore Companies" 
+  description="Search for companies registered in Singapore by name, UEN, address, or other criteria"
+>
+  <section class="bg-white border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <h1 class="text-3xl font-bold text-gray-900">Search Companies</h1>
+      <p class="mt-2 text-lg text-gray-600">
+        Find companies registered in Singapore using various search criteria
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Search Form -->
+      <SearchForm 
+        action="/search/[...query]" 
+        method="GET" 
+        className="bg-white p-6 rounded-lg shadow-sm"
+      />
+    </div>
+  </section>
+</Layout>

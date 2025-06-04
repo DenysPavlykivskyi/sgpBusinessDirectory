@@ -3,9 +3,13 @@ export interface Props {
   currentPage: number;
   totalPages: number;
   basePath: string;
+  className?: string;
 }
 
-const { currentPage, totalPages, basePath } = Astro.props;
+const { currentPage, totalPages, basePath, className = '' } = Astro.props;
+
+// Determine if we're using query parameters (search) or path-based pagination
+const isQueryPagination = basePath.includes('?');
 
 // Calculate the range of pages to show
 const getVisiblePageNumbers = (current: number, total: number) => {
@@ -29,16 +33,27 @@ const getVisiblePageNumbers = (current: number, total: number) => {
 };
 
 const visiblePages = getVisiblePageNumbers(currentPage, totalPages);
+
+// Generate proper page URLs based on pagination type
+const getPageUrl = (pageNum: number) => {
+  if (isQueryPagination) {
+    // For search URLs like "/search?q=test&page="
+    return `${basePath}${pageNum}`;
+  } else {
+    // For path-based URLs like "/companies/" or "/companies/2"
+    return `${basePath}${pageNum === 1 ? '' : pageNum}`;
+  }
+};
 ---
 
 {totalPages > 1 && (
-  <nav aria-label="Pagination" class="my-8">
+  <nav aria-label="Pagination" class={`my-8 ${className}`}>
     <ul class="flex justify-center space-x-1 text-sm">
       {/* Previous page link */}
       <li>
         {currentPage > 1 ? (
           <a
-            href={`${basePath}${currentPage === 2 ? '' : currentPage - 1}/`}
+            href={getPageUrl(currentPage - 1)}
             class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
           >
             <span class="sr-only">Previous</span>
@@ -77,7 +92,7 @@ const visiblePages = getVisiblePageNumbers(currentPage, totalPages);
               </span>
             ) : (
               <a
-                href={`${basePath}${pageNum === 1 ? '' : pageNum}/`}
+                href={getPageUrl(pageNum)}
                 class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium rounded-md text-gray-700 hover:bg-gray-50"
               >
                 {pageNum}
@@ -91,7 +106,7 @@ const visiblePages = getVisiblePageNumbers(currentPage, totalPages);
       <li>
         {currentPage < totalPages ? (
           <a
-            href={`${basePath}${currentPage + 1}/`}
+            href={getPageUrl(currentPage + 1)}
             class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
           >
             <span class="sr-only">Next</span>

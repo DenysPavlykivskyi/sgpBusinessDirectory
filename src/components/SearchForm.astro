@@ -1,0 +1,184 @@
+---
+const { 
+  initialValues = {}, 
+  action = "/search", 
+  method = "GET", 
+  className = "",
+  showTitle = false 
+} = Astro.props;
+---
+
+<div class={`bg-white shadow-sm rounded-lg overflow-hidden ${className}`}>
+  <div class="p-6">
+    {showTitle && (
+      <h2 class="text-lg font-medium text-gray-900 mb-6">Search Companies</h2>
+    )}
+    
+    <form 
+      id="searchForm" 
+      method={method} 
+      action={action}
+      class="space-y-6"
+    >
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+        <!-- Keywords -->
+        <div>
+          <label for="q" class="block text-sm font-medium text-gray-700">Keywords</label>
+          <input 
+            type="text" 
+            name="q" 
+            id="q" 
+            value={initialValues.q || ''} 
+            placeholder="Name, UEN, or address"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm" 
+          />
+        </div>
+        
+        <!-- Company Name -->
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Company Name</label>
+          <input 
+            type="text" 
+            name="name" 
+            id="name" 
+            value={initialValues.name || ''} 
+            placeholder="Exact name match"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm" 
+          />
+        </div>
+        
+        <!-- Registration Type -->
+        <div>
+          <label for="type" class="block text-sm font-medium text-gray-700">Registration Type</label>
+          <select 
+            name="type" 
+            id="type" 
+            class="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm rounded-md"
+          >
+            <option value="">All Types</option>
+            <option 
+              value="Sole Proprietorship/Partnership" 
+              selected={initialValues.type === 'Sole Proprietorship/Partnership'}
+            >
+              Sole Proprietorship/Partnership
+            </option>
+            <option 
+              value="Local Company" 
+              selected={initialValues.type === 'Local Company'}
+            >
+              Local Company
+            </option>
+            <option 
+              value="Limited Partnership" 
+              selected={initialValues.type === 'Limited Partnership'}
+            >
+              Limited Partnership
+            </option>
+            <option 
+              value="Foreign Company Branch" 
+              selected={initialValues.type === 'Foreign Company Branch'}
+            >
+              Foreign Company Branch
+            </option>
+            <option 
+              value="Limited Liability Partnership" 
+              selected={initialValues.type === 'Limited Liability Partnership'}
+            >
+              Limited Liability Partnership
+            </option>
+          </select>
+        </div>
+        
+        <!-- Status -->
+        <div>
+          <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+          <select 
+            name="status" 
+            id="status" 
+            class="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm rounded-md"
+          >
+            <option value="">All Statuses</option>
+            <option 
+              value="Live" 
+              selected={initialValues.status === 'Live'}
+            >
+              Live
+            </option>
+            <option 
+              value="Terminated" 
+              selected={initialValues.status === 'Terminated'}
+            >
+              Terminated
+            </option>
+            <option 
+              value="Cancelled" 
+              selected={initialValues.status === 'Cancelled'}
+            >
+              Cancelled
+            </option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-end gap-3">
+        <a 
+          href="/search" 
+          class="w-full sm:w-auto inline-flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+        >
+          Clear All
+        </a>
+        <button 
+          type="submit" 
+          class="w-full sm:w-auto inline-flex justify-center items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+        >
+          Search Companies
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchForm = document.getElementById('searchForm');
+    
+    if (searchForm) {
+      // Enhanced form submission
+      searchForm.addEventListener('submit', (e) => {
+        // For GET forms, let the browser handle it natively
+        if (searchForm.method.toLowerCase() === 'get') return;
+        
+        e.preventDefault();
+        const formData = new FormData(searchForm);
+        const params = new URLSearchParams();
+        
+        // Only include non-empty values
+        formData.forEach((value, key) => {
+          if (value && value.trim()) params.set(key, value.trim());
+        });
+        
+        // Reset page to 1 for new searches
+        params.set('page', '1');
+        
+        // Ensure we're always using the same path
+        const actionPath = searchForm.action.endsWith('/search') 
+          ? '/search' 
+          : searchForm.action;
+        
+        window.location.href = `${actionPath}?${params.toString()}`;
+      });
+
+      // Clear button functionality
+      const clearButtons = document.querySelectorAll('[href="/search"]');
+      clearButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          if (window.location.pathname === '/search') {
+            e.preventDefault();
+            window.location.href = '/search';
+          }
+          // Otherwise, let the link work normally
+        });
+      });
+    }
+  });
+</script>
