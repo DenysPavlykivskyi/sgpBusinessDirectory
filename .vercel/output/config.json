@@ -2,6 +2,9 @@
 	"version": 3,
 	"routes": [
 		{
+			"handle": "filesystem"
+		},
+		{
 			"src": "^/_astro/(.*)$",
 			"headers": {
 				"cache-control": "public, max-age=31536000, immutable"
@@ -9,62 +12,59 @@
 			"continue": true
 		},
 		{
-			"handle": "filesystem"
-		},
-		{
-			"src": "^\\/_server-islands\\/([^/]+?)\\/?$",
+			"src": "^/_server-islands/([^/]+?)/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/_image\\/?$",
+			"src": "^/_image/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/about\\/?$",
+			"src": "^/about/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/blog\\/([^/]+?)\\/?$",
+			"src": "^/blog/([^/]+?)/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/blog\\/?$",
+			"src": "^/blog/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/companies\\/([^/]+?)\\/?$",
+			"src": "^/companies/([^/]+?)/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/companies\\/?$",
+			"src": "^/companies/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/companies(?:\\/(.*?))?\\/?$",
+			"src": "^/companies(?:/(.*?))?/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/news\\/?$",
+			"src": "^/news/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/registration-types\\/([^/]+?)\\/?$",
+			"src": "^/registration-types/([^/]+?)/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/registration-types\\/?$",
+			"src": "^/registration-types/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/search(?:\\/(.*?))?\\/?$",
+			"src": "^/search(?:/(.*?))?/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/sitemap\\.xml\\/?$",
+			"src": "^/sitemap\\.xml/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/$",
+			"src": "^/$",
 			"dest": "_render"
 		}
 	]
