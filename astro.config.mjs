@@ -8,14 +8,9 @@ export default defineConfig({
   site: 'https://sg-business.com',
   output: 'server', // Required for SSR
   adapter: vercel({
-    // Vercel-specific configurations
-    webAnalytics: {
-      enabled: true, // Optional: Enable Vercel Analytics
-    },
-    speedInsights: {
-      enabled: true, // Optional: Enable Speed Insights
-    },
-    // Additional Vercel edge configurations can go here
+    runtime: 'nodejs20.x',
+    functionPerRoute: true, // Helps isolate crashes
+    edgeMiddleware: false, // Disable if not needed
   }),
   integrations: [
     tailwind(),
