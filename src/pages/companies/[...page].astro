@@ -1,10 +1,11 @@
 ---
+export const prerender = true;
+
 import Layout from '../../layouts/Layout.astro';
 import CompanyCard from '../../components/CompanyCard.astro';
 import Pagination from '../../components/Pagination.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import companies from '../../data/companies.json';
-
 // Generate static paths for all pages
 export async function getStaticPaths() {
   const pageSize = 12;

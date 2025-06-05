@@ -32,15 +32,7 @@
 			"dest": "_render"
 		},
 		{
-			"src": "^/companies/([^/]+?)/?$",
-			"dest": "_render"
-		},
-		{
 			"src": "^/companies/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^/companies(?:/(.*?))?/?$",
 			"dest": "_render"
 		},
 		{
